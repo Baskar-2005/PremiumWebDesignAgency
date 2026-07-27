@@ -1,0 +1,503 @@
+export type Project = {
+  id: number
+  slug: string
+  title: string
+  tagline: string
+  category: string
+  type: string
+  client: string
+  industry: string
+  location: string
+  website: string
+  duration: string
+  teamSize: string
+  completionDate: string
+  status: 'Completed' | 'In Progress' | 'Maintenance'
+  budgetRange: string
+  budgetBreakdown: { label: string; amount: string }[]
+  supportPeriod: string
+  color: string
+  year: string
+  num: string
+  heroImg: string
+  galleryImgs: { url: string; label: string }[]
+  badges: string[]
+  overview: {
+    heading: string
+    goals: string
+    problem: string
+    audience: string
+    solution: string
+  }
+  challenges: { title: string; desc: string; icon: string }[]
+  solutions: { title: string; desc: string; icon: string }[]
+  features: { title: string; desc: string; icon: string }[]
+  techStack: string[]
+  timeline: { phase: string; duration: string; desc: string }[]
+  performance: { label: string; score: number; color: string }[]
+  results: { value: string; suffix: string; label: string; prefix?: string }[]
+  testimonial: {
+    quote: string
+    name: string
+    role: string
+    company: string
+    avatar: string
+    rating: number
+  }
+  deliverables: string[]
+  tags: string[]
+  relatedIds: number[]
+  liveUrl: string
+  githubUrl?: string
+  services: string[]
+  videoPlaceholder: string
+}
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    slug: 'novapay',
+    title: 'NovaPay',
+    tagline: 'Next-generation digital banking for modern consumers',
+    category: 'Fintech',
+    type: 'Web App',
+    client: 'NovaPay Technologies',
+    industry: 'Financial Technology',
+    location: 'Chennai, India',
+    website: 'https://novapay.app',
+    duration: '60 Days',
+    teamSize: '4 Members',
+    completionDate: 'March 2024',
+    status: 'Completed',
+    budgetRange: '₹1,20,000',
+    budgetBreakdown: [
+      { label: 'UI/UX Design', amount: '₹25,000' },
+      { label: 'Frontend Development', amount: '₹50,000' },
+      { label: 'Backend & APIs', amount: '₹30,000' },
+      { label: 'Hosting & Deployment', amount: '₹15,000' },
+    ],
+    supportPeriod: '12 Months',
+    color: '#4f8cff',
+    year: '2024',
+    num: '01',
+    heroImg: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&h=800&fit=crop&auto=format',
+    galleryImgs: [
+      { url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=600&fit=crop&auto=format', label: 'Dashboard' },
+      { url: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=900&h=600&fit=crop&auto=format', label: 'Mobile App' },
+      { url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&h=600&fit=crop&auto=format', label: 'Analytics' },
+      { url: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=900&h=600&fit=crop&auto=format', label: 'Card Management' },
+      { url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop&auto=format', label: 'Transactions' },
+      { url: 'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=900&h=600&fit=crop&auto=format', label: 'Admin Panel' },
+    ],
+    badges: ['Responsive', 'SEO Optimized', 'Lightning Fast', 'Secure', 'Modern UI'],
+    overview: {
+      heading: 'Reimagining digital banking for the modern era',
+      goals: 'Build a scalable, consumer-grade digital banking platform that makes financial management intuitive, visual, and real-time.',
+      problem: 'Existing banking UIs were clunky, data-heavy, and frustrating on mobile. Users abandoned transfers mid-flow and had no clear view of their financial health.',
+      audience: 'Tech-savvy urban consumers aged 22–40 who manage money digitally, expect instant transfers, and demand beautiful, fast interfaces.',
+      solution: 'A fully responsive fintech platform with real-time analytics dashboards, frictionless card management, instant transfers, and a mobile-first design language.',
+    },
+    challenges: [
+      { title: 'Complex Data Visualization', desc: 'Rendering real-time financial charts with thousands of data points without performance degradation was a core challenge.', icon: '📊' },
+      { title: 'Security Architecture', desc: 'Implementing bank-grade encryption, 2FA, and session management while keeping the UX smooth and non-intrusive.', icon: '🔒' },
+      { title: 'Cross-Platform Performance', desc: 'The app had to deliver sub-2s load times across mobile and desktop with varying network conditions.', icon: '⚡' },
+      { title: 'Regulatory Compliance', desc: 'Meeting financial data regulations while maintaining a seamless user experience across all touchpoints.', icon: '📋' },
+    ],
+    solutions: [
+      { title: 'Virtualized Data Rendering', desc: 'Used windowed rendering and D3.js-powered charts that only render visible data points, keeping FPS above 60 at all times.', icon: '🚀' },
+      { title: 'Zero-Trust Security Model', desc: 'Implemented JWT rotation, encrypted local storage, biometric auth support, and end-to-end API encryption via Supabase RLS.', icon: '🛡️' },
+      { title: 'Edge-Deployed Architecture', desc: 'Deployed on Vercel Edge Network with aggressive CDN caching and code splitting, achieving a 97 Lighthouse performance score.', icon: '🌐' },
+      { title: 'Compliance-First Design', desc: 'Worked with legal consultants to integrate consent flows and data handling protocols directly into the product design system.', icon: '✅' },
+    ],
+    features: [
+      { title: 'Real-Time Dashboard', desc: 'Live financial metrics and charts with WebSocket-powered data streams.', icon: '📈' },
+      { title: 'Instant Transfers', desc: 'Frictionless money transfers with smart contact suggestions and one-tap execution.', icon: '💸' },
+      { title: 'Card Management', desc: 'Freeze, unfreeze, set limits, and manage virtual cards from a single panel.', icon: '💳' },
+      { title: 'Analytics Engine', desc: 'Spending breakdowns, trend analysis, and predictive budgeting powered by ML.', icon: '🧠' },
+      { title: 'Multi-Currency Support', desc: 'Seamless forex conversions and multi-currency wallets for global users.', icon: '🌍' },
+      { title: 'Biometric Auth', desc: 'Face ID and fingerprint authentication for instant, secure access.', icon: '🔐' },
+      { title: 'Payment Gateway', desc: 'Integrated Stripe and Razorpay for seamless domestic and international payments.', icon: '💰' },
+      { title: 'Admin Dashboard', desc: 'Full-featured admin panel with user management, KYC review, and compliance tools.', icon: '⚙️' },
+      { title: 'Email Notifications', desc: 'Automated transactional emails with beautiful HTML templates via SendGrid.', icon: '📧' },
+    ],
+    techStack: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind', 'Framer Motion', 'D3.js', 'Stripe', 'Vercel'],
+    timeline: [
+      { phase: 'Discovery', duration: '5 days', desc: 'Stakeholder interviews, competitor analysis, and defining success metrics.' },
+      { phase: 'Wireframes', duration: '7 days', desc: 'Low-fidelity wireframes for all 28 screens across mobile and desktop.' },
+      { phase: 'UI Design', duration: '12 days', desc: 'High-fidelity Figma designs with a complete design system and component library.' },
+      { phase: 'Development', duration: '25 days', desc: 'Frontend and backend implementation with API integration and testing.' },
+      { phase: 'Testing & QA', duration: '7 days', desc: 'Cross-device testing, performance audits, security review, and bug fixes.' },
+      { phase: 'Deployment', duration: '4 days', desc: 'Production deployment, DNS configuration, monitoring setup, and client handover.' },
+    ],
+    performance: [
+      { label: 'Performance', score: 97, color: '#34d399' },
+      { label: 'Accessibility', score: 94, color: '#34d399' },
+      { label: 'Best Practices', score: 100, color: '#34d399' },
+      { label: 'SEO', score: 98, color: '#34d399' },
+    ],
+    results: [
+      { value: '340', suffix: '%', label: 'Increase in User Signups', prefix: '+' },
+      { value: '2.1', suffix: 's', label: 'Average Load Time' },
+      { value: '97', suffix: '/100', label: 'Lighthouse Score' },
+      { value: '89', suffix: '%', label: 'Mobile Retention Rate', prefix: '+' },
+      { value: '4.9', suffix: '/5', label: 'App Store Rating' },
+      { value: '50', suffix: 'K+', label: 'Monthly Active Users' },
+    ],
+    testimonial: {
+      quote: "Digital Shine didn't just build us a banking app — they built us a competitive advantage. The attention to detail in the UX, the speed of the platform, and the quality of the code exceeded every expectation. Our users constantly compliment how smooth the experience is. We've already commissioned our second project with them.",
+      name: 'Arjun Mehta',
+      role: 'CEO & Co-Founder',
+      company: 'NovaPay Technologies',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&auto=format',
+      rating: 5,
+    },
+    deliverables: [
+      'Responsive Web Application',
+      'iOS & Android PWA',
+      'Admin Dashboard',
+      'API Documentation',
+      'Design System & Figma Files',
+      'SEO Configuration',
+      'Performance Audit Report',
+      'Security Audit Report',
+      'Staff Training Session',
+      '12-Month Support Plan',
+    ],
+    tags: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind'],
+    relatedIds: [2, 4, 3],
+    liveUrl: 'https://novapay.app',
+    services: ['UI/UX Design', 'Frontend Development', 'Backend Development', 'SEO Optimization', 'Deployment'],
+    videoPlaceholder: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1200&h=675&fit=crop&auto=format',
+  },
+  {
+    id: 2,
+    slug: 'luminary-studio',
+    title: 'Luminary Studio',
+    tagline: 'Award-winning creative identity for a world-class studio',
+    category: 'Creative Agency',
+    type: 'Website',
+    client: 'Luminary Creative Studio',
+    industry: 'Design & Creative',
+    location: 'Mumbai, India',
+    website: 'https://luminary.studio',
+    duration: '45 Days',
+    teamSize: '3 Members',
+    completionDate: 'January 2024',
+    status: 'Completed',
+    budgetRange: '₹85,000',
+    budgetBreakdown: [
+      { label: 'UI/UX Design', amount: '₹20,000' },
+      { label: 'Frontend Development', amount: '₹40,000' },
+      { label: 'Animation & Interactions', amount: '₹15,000' },
+      { label: 'Deployment', amount: '₹10,000' },
+    ],
+    supportPeriod: '6 Months',
+    color: '#a78bfa',
+    year: '2024',
+    num: '02',
+    heroImg: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1400&h=800&fit=crop&auto=format',
+    galleryImgs: [
+      { url: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&h=600&fit=crop&auto=format', label: 'Homepage' },
+      { url: 'https://images.unsplash.com/photo-1555421689-491a97ff2040?w=900&h=600&fit=crop&auto=format', label: 'Portfolio Grid' },
+      { url: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&h=600&fit=crop&auto=format', label: 'Case Study' },
+      { url: 'https://images.unsplash.com/photo-1558655146-d09347e92766?w=900&h=600&fit=crop&auto=format', label: 'About Page' },
+    ],
+    badges: ['Responsive', 'Award-Winning Design', 'Lightning Fast', 'SEO Optimized', 'Modern UI'],
+    overview: {
+      heading: 'A cinematic digital identity for a creative powerhouse',
+      goals: 'Create a portfolio website that commands attention, showcases creative work with impact, and converts high-value clients.',
+      problem: 'The client had world-class creative work but a dated website that failed to communicate their premium positioning. Potential clients were bouncing without engaging.',
+      audience: 'Enterprise brands, startups, and Fortune 500 companies looking to commission premium creative and branding work.',
+      solution: 'A cinematic, scroll-driven website with full-bleed imagery, custom GSAP animations, magnetic cursor interactions, and an immersive project showcase.',
+    },
+    challenges: [
+      { title: 'Animation Performance', desc: 'Complex scroll-driven GSAP animations had to run at 60fps across all devices without causing layout shifts.', icon: '🎬' },
+      { title: 'Visual Hierarchy', desc: 'Communicating premium positioning through typography, spacing, and color while keeping the design minimal and focused.', icon: '🎨' },
+      { title: 'Load Time vs. Quality', desc: 'Balancing high-resolution creative imagery with fast load times to prevent user drop-off.', icon: '⚡' },
+    ],
+    solutions: [
+      { title: 'GSAP ScrollTrigger', desc: 'Used GSAP ScrollTrigger with hardware-accelerated transforms exclusively — zero layout-affecting properties animated.', icon: '🚀' },
+      { title: 'Design System', desc: 'Built a strict typographic scale and spatial system that creates instant visual hierarchy without heavy decoration.', icon: '📐' },
+      { title: 'Smart Image Loading', desc: 'Progressive AVIF/WebP images with blur placeholders, lazy loading, and Cloudinary transformations.', icon: '🖼️' },
+    ],
+    features: [
+      { title: 'Cinematic Scroll', desc: 'Full-page scroll hijacking with smooth, cinematic section transitions powered by GSAP.', icon: '🎥' },
+      { title: 'Custom Cursor', desc: 'Magnetic cursor that morphs, scales, and reacts contextually to every interactive element.', icon: '🖱️' },
+      { title: 'Portfolio Showcase', desc: 'Immersive project grid with hover video previews and detail overlays.', icon: '🗂️' },
+      { title: 'Contact System', desc: 'Animated multi-step project brief form with conditional logic and instant email delivery.', icon: '📬' },
+      { title: 'CMS Integration', desc: 'Headless CMS for the team to publish case studies and update portfolio without touching code.', icon: '📝' },
+    ],
+    techStack: ['React', 'Framer Motion', 'GSAP', 'Figma', 'Vercel', 'Cloudinary', 'TypeScript'],
+    timeline: [
+      { phase: 'Discovery', duration: '4 days', desc: 'Brand workshops, competitor analysis, and creative direction alignment.' },
+      { phase: 'Wireframes', duration: '5 days', desc: 'Structural wireframes and interaction prototypes.' },
+      { phase: 'UI Design', duration: '14 days', desc: 'Full visual design with animation storyboards.' },
+      { phase: 'Development', duration: '18 days', desc: 'Build with performance-first GSAP animations and responsive layout.' },
+      { phase: 'Testing & Launch', duration: '4 days', desc: 'QA, performance audit, and production launch.' },
+    ],
+    performance: [
+      { label: 'Performance', score: 95, color: '#34d399' },
+      { label: 'Accessibility', score: 91, color: '#34d399' },
+      { label: 'Best Practices', score: 100, color: '#34d399' },
+      { label: 'SEO', score: 100, color: '#34d399' },
+    ],
+    results: [
+      { value: '210', suffix: '%', label: 'More Inbound Inquiries', prefix: '+' },
+      { value: '4.2', suffix: 's', label: 'Avg. Time on Site' },
+      { value: '95', suffix: '/100', label: 'Lighthouse Score' },
+      { value: '68', suffix: '%', label: 'Lower Bounce Rate', prefix: '-' },
+      { value: '3', suffix: 'x', label: 'Conversion Increase' },
+      { value: '12', suffix: 'K+', label: 'Monthly Visitors' },
+    ],
+    testimonial: {
+      quote: "We've worked with several web studios before, but Digital Shine is in a completely different league. They understood our brand's soul from day one. The final website doesn't just look beautiful — it feels alive. We get compliments on it every single week from new clients.",
+      name: 'Priya Nair',
+      role: 'Creative Director',
+      company: 'Luminary Creative Studio',
+      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&auto=format',
+      rating: 5,
+    },
+    deliverables: [
+      'Responsive Website',
+      'CMS Integration',
+      'Animation System',
+      'Design System & Figma Files',
+      'SEO Configuration',
+      'Image Optimization Pipeline',
+      'Staff Training',
+      '6-Month Support',
+    ],
+    tags: ['React', 'Framer Motion', 'GSAP', 'Figma'],
+    relatedIds: [1, 3, 4],
+    liveUrl: 'https://luminary.studio',
+    services: ['Brand Strategy', 'UI/UX Design', 'Frontend Development', 'Motion Design', 'Deployment'],
+    videoPlaceholder: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1200&h=675&fit=crop&auto=format',
+  },
+  {
+    id: 3,
+    slug: 'orbit-commerce',
+    title: 'Orbit Commerce',
+    tagline: 'Luxury e-commerce engineered for conversion and delight',
+    category: 'E-Commerce',
+    type: 'Platform',
+    client: 'Orbit Fashion House',
+    industry: 'Luxury Fashion',
+    location: 'Bangalore, India',
+    website: 'https://orbitfashion.com',
+    duration: '75 Days',
+    teamSize: '5 Members',
+    completionDate: 'November 2023',
+    status: 'Completed',
+    budgetRange: '₹1,60,000',
+    budgetBreakdown: [
+      { label: 'UI/UX Design', amount: '₹30,000' },
+      { label: 'Frontend Development', amount: '₹55,000' },
+      { label: 'Shopify Integration', amount: '₹35,000' },
+      { label: 'SEO & Marketing', amount: '₹25,000' },
+      { label: 'Deployment & Infra', amount: '₹15,000' },
+    ],
+    supportPeriod: '12 Months',
+    color: '#34d399',
+    year: '2023',
+    num: '03',
+    heroImg: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400&h=800&fit=crop&auto=format',
+    galleryImgs: [
+      { url: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&h=600&fit=crop&auto=format', label: 'Homepage' },
+      { url: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=900&h=600&fit=crop&auto=format', label: 'Product Grid' },
+      { url: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=600&fit=crop&auto=format', label: 'Checkout Flow' },
+      { url: 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=900&h=600&fit=crop&auto=format', label: 'Mobile View' },
+    ],
+    badges: ['Responsive', 'SEO Optimized', 'Lightning Fast', 'Secure Payments', 'Modern UI'],
+    overview: {
+      heading: 'Where luxury meets frictionless commerce',
+      goals: 'Build a premium shopping experience that reflects the brand\'s luxury positioning while maximising conversion rates and average order value.',
+      problem: 'The existing store was built on a generic Shopify theme that felt cheap and inconsistent with their ₹50,000+ product price points. Cart abandonment was at 78%.',
+      audience: 'Affluent urban shoppers aged 28–50 who purchase luxury fashion online and expect white-glove digital experiences.',
+      solution: 'A custom-built Next.js storefront on Shopify\'s Storefront API with personalized product discovery, one-click checkout, and 98/100 Lighthouse performance.',
+    },
+    challenges: [
+      { title: 'High Cart Abandonment', desc: 'A complex, multi-step checkout was killing conversions. Users dropped off at the payment step at a 78% rate.', icon: '🛒' },
+      { title: 'Brand Misalignment', desc: 'The generic Shopify theme created a massive gap between the in-store luxury experience and the digital one.', icon: '💎' },
+      { title: 'Inventory Complexity', desc: 'Managing 2000+ SKUs across sizes, colors, and collections required a robust filtering and search architecture.', icon: '📦' },
+    ],
+    solutions: [
+      { title: 'One-Click Checkout', desc: 'Redesigned the checkout into a single-screen experience with address autocomplete and saved payment methods.', icon: '✨' },
+      { title: 'Custom Design System', desc: 'Built a luxury design system from scratch — editorial typography, cinematic imagery, and generous whitespace.', icon: '🎨' },
+      { title: 'Faceted Search Engine', desc: 'Implemented Algolia-powered instant search with smart facets, visual filters, and predictive suggestions.', icon: '🔍' },
+    ],
+    features: [
+      { title: 'Personalized Discovery', desc: 'AI-powered product recommendations based on browsing history and purchase patterns.', icon: '🧠' },
+      { title: 'One-Click Checkout', desc: 'Streamlined checkout with Apple Pay, Google Pay, and saved card support.', icon: '⚡' },
+      { title: 'Visual Search', desc: 'Upload a photo to find visually similar products in the catalog.', icon: '🔍' },
+      { title: 'Wishlist & Collections', desc: 'Save and share curated wishlists with friends and family.', icon: '❤️' },
+      { title: 'Inventory Management', desc: 'Real-time stock management with low-stock alerts and pre-order handling.', icon: '📦' },
+      { title: 'Analytics Dashboard', desc: 'Detailed sales analytics, customer LTV, and conversion funnel reporting.', icon: '📊' },
+    ],
+    techStack: ['Next.js', 'Shopify', 'Node.js', 'Cloudflare', 'TypeScript', 'Algolia', 'Stripe'],
+    timeline: [
+      { phase: 'Discovery', duration: '6 days', desc: 'E-commerce audit, customer journey mapping, and conversion analysis.' },
+      { phase: 'Design', duration: '18 days', desc: 'Full UX redesign with luxury design system and checkout flow optimization.' },
+      { phase: 'Development', duration: '35 days', desc: 'Custom Next.js storefront with Shopify Storefront API integration.' },
+      { phase: 'Content Migration', duration: '8 days', desc: 'Product catalog migration, image optimization, and SEO setup.' },
+      { phase: 'Testing & Launch', duration: '8 days', desc: 'Conversion rate testing, performance audit, and phased launch.' },
+    ],
+    performance: [
+      { label: 'Performance', score: 98, color: '#34d399' },
+      { label: 'Accessibility', score: 96, color: '#34d399' },
+      { label: 'Best Practices', score: 100, color: '#34d399' },
+      { label: 'SEO', score: 100, color: '#34d399' },
+    ],
+    results: [
+      { value: '280', suffix: '%', label: 'Revenue Increase', prefix: '+' },
+      { value: '62', suffix: '%', label: 'Cart Abandonment Reduction', prefix: '-' },
+      { value: '98', suffix: '/100', label: 'Lighthouse Score' },
+      { value: '4.4', suffix: 'x', label: 'Conversion Rate Lift' },
+      { value: '85', suffix: 'K+', label: 'Monthly Visitors' },
+      { value: '48', suffix: '%', label: 'Higher Avg. Order Value', prefix: '+' },
+    ],
+    testimonial: {
+      quote: "Digital Shine transformed our online store from something we were embarrassed by to something we're proud to share. Within 3 months of launch, our online revenue tripled. The checkout redesign alone paid for the entire project 10 times over. Absolutely exceptional work.",
+      name: 'Kavya Reddy',
+      role: 'Head of Digital',
+      company: 'Orbit Fashion House',
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&auto=format',
+      rating: 5,
+    },
+    deliverables: [
+      'Custom Shopify Storefront',
+      'Admin Panel',
+      'Analytics Dashboard',
+      'SEO Setup',
+      'Performance Optimization',
+      'Product Catalog Migration',
+      'Design System',
+      'Staff Training',
+      '12-Month Support',
+    ],
+    tags: ['Next.js', 'Shopify', 'Node.js', 'Cloudflare'],
+    relatedIds: [1, 2, 4],
+    liveUrl: 'https://orbitfashion.com',
+    services: ['UI/UX Design', 'E-Commerce Development', 'SEO', 'Performance Optimization', 'Analytics'],
+    videoPlaceholder: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1200&h=675&fit=crop&auto=format',
+  },
+  {
+    id: 4,
+    slug: 'synapse-ai',
+    title: 'Synapse AI',
+    tagline: 'Enterprise AI intelligence platform that scales with your data',
+    category: 'SaaS',
+    type: 'Dashboard',
+    client: 'Synapse Technologies',
+    industry: 'Artificial Intelligence',
+    location: 'Hyderabad, India',
+    website: 'https://synapse.ai',
+    duration: '90 Days',
+    teamSize: '6 Members',
+    completionDate: 'April 2024',
+    status: 'Completed',
+    budgetRange: '₹2,00,000',
+    budgetBreakdown: [
+      { label: 'UI/UX Design', amount: '₹40,000' },
+      { label: 'Frontend Development', amount: '₹70,000' },
+      { label: 'Backend & ML Integration', amount: '₹60,000' },
+      { label: 'Infrastructure', amount: '₹30,000' },
+    ],
+    supportPeriod: '24 Months',
+    color: '#f59e0b',
+    year: '2024',
+    num: '04',
+    heroImg: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1400&h=800&fit=crop&auto=format',
+    galleryImgs: [
+      { url: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=900&h=600&fit=crop&auto=format', label: 'AI Dashboard' },
+      { url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=600&fit=crop&auto=format', label: 'Data Visualization' },
+      { url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop&auto=format', label: 'Analytics' },
+      { url: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=900&h=600&fit=crop&auto=format', label: 'Pipeline Monitor' },
+    ],
+    badges: ['Enterprise-Grade', 'Real-Time', 'Role-Based Access', 'Secure', 'Scalable'],
+    overview: {
+      heading: 'AI insights at enterprise scale, with consumer-grade UX',
+      goals: 'Build a multi-tenant enterprise AI platform where teams can monitor inference pipelines, explore model performance, and act on insights without needing a data science background.',
+      problem: 'Data scientists had powerful ML models but no way to share insights with business stakeholders. The existing CLI-based tools were inaccessible to 90% of the organization.',
+      audience: 'Enterprise data teams, product managers, and C-suite executives at mid-to-large technology companies running production ML systems.',
+      solution: 'A React-based SaaS dashboard with role-based access, real-time pipeline monitoring, interactive D3.js visualizations, and natural language query support.',
+    },
+    challenges: [
+      { title: 'Data Volume at Scale', desc: 'Visualizing millions of inference events per day without overwhelming the browser or degrading the user experience.', icon: '🗄️' },
+      { title: 'Role-Based Complexity', desc: 'Supporting 8 distinct user roles with granular permissions across hundreds of UI components without code explosion.', icon: '👥' },
+      { title: 'Real-Time Requirements', desc: 'Pipeline health data needed to update within 500ms of events occurring, across multiple concurrent users.', icon: '⚡' },
+      { title: 'Accessibility at Enterprise', desc: 'Meeting WCAG 2.1 AA compliance requirements demanded by enterprise procurement teams.', icon: '♿' },
+    ],
+    solutions: [
+      { title: 'Virtualized Chart Engine', desc: 'Built a custom chart virtualization layer on top of D3.js that renders only the visible data window, handling 10M+ events smoothly.', icon: '📊' },
+      { title: 'Permission Architecture', desc: 'Implemented a centralized RBAC system with a React context gate — permissions declared once, enforced everywhere.', icon: '🔑' },
+      { title: 'WebSocket Event Bus', desc: 'Firebase Realtime Database with a custom event bus delivering sub-300ms pipeline updates to all connected clients.', icon: '🌐' },
+      { title: 'Accessibility System', desc: 'Built a company-wide accessible component library that met WCAG 2.1 AA from the ground up, verified with automated testing.', icon: '✅' },
+    ],
+    features: [
+      { title: 'Pipeline Monitor', desc: 'Real-time inference pipeline health with anomaly detection and automatic alerts.', icon: '🔭' },
+      { title: 'Model Performance', desc: 'Track accuracy, drift, latency, and throughput across all production models.', icon: '🧠' },
+      { title: 'Data Explorer', desc: 'Natural language interface to query and visualize any dataset without SQL.', icon: '🔍' },
+      { title: 'Role Management', desc: 'Granular RBAC with custom roles, team workspaces, and audit logs.', icon: '👥' },
+      { title: 'Automated Reports', desc: 'Scheduled PDF and CSV reports delivered to stakeholders via email.', icon: '📄' },
+      { title: 'AI Explanability', desc: 'SHAP-value visualizations and natural language model explanations.', icon: '💡' },
+      { title: 'Integrations', desc: 'Connect to AWS SageMaker, GCP Vertex AI, HuggingFace, and OpenAI.', icon: '🔗' },
+      { title: 'Audit Trail', desc: 'Immutable audit log of all user actions for compliance and debugging.', icon: '📋' },
+    ],
+    techStack: ['React', 'TypeScript', 'Firebase', 'D3.js', 'Node.js', 'Python', 'Vercel'],
+    timeline: [
+      { phase: 'Discovery & Research', duration: '10 days', desc: 'Technical discovery, stakeholder interviews, and system architecture planning.' },
+      { phase: 'Design System', duration: '14 days', desc: 'Enterprise component library and dashboard layout design.' },
+      { phase: 'Core Development', duration: '40 days', desc: 'Dashboard, charts, RBAC system, and real-time integration.' },
+      { phase: 'ML Integration', duration: '15 days', desc: 'Integration with existing ML pipeline APIs and data streams.' },
+      { phase: 'Security & Compliance', duration: '7 days', desc: 'Penetration testing, WCAG audit, and compliance review.' },
+      { phase: 'Launch', duration: '4 days', desc: 'Staged enterprise rollout with monitoring and on-call support.' },
+    ],
+    performance: [
+      { label: 'Performance', score: 92, color: '#34d399' },
+      { label: 'Accessibility', score: 96, color: '#34d399' },
+      { label: 'Best Practices', score: 100, color: '#34d399' },
+      { label: 'SEO', score: 88, color: '#a3e635' },
+    ],
+    results: [
+      { value: '400', suffix: '%', label: 'More Stakeholder Engagement', prefix: '+' },
+      { value: '300', suffix: 'ms', label: 'Real-Time Update Latency' },
+      { value: '92', suffix: '/100', label: 'Lighthouse Score' },
+      { value: '85', suffix: '%', label: 'Reduction in Analyst Tickets', prefix: '-' },
+      { value: '200', suffix: '+', label: 'Enterprise Users' },
+      { value: '10', suffix: 'M+', label: 'Events Processed Daily' },
+    ],
+    testimonial: {
+      quote: "Synapse went from a tool only our ML engineers could use to something our entire C-suite checks every morning. Digital Shine bridged the gap between technical complexity and business clarity in a way we didn't think was possible. The dashboard is our most-praised internal tool.",
+      name: 'Vikram Rao',
+      role: 'CTO',
+      company: 'Synapse Technologies',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&auto=format',
+      rating: 5,
+    },
+    deliverables: [
+      'SaaS Dashboard Application',
+      'Enterprise Component Library',
+      'RBAC System',
+      'Real-Time Pipeline Monitor',
+      'API Documentation',
+      'Accessibility Audit Report',
+      'Security Audit Report',
+      'Admin Panel',
+      'Staff Training',
+      '24-Month Enterprise Support',
+    ],
+    tags: ['React', 'TypeScript', 'Firebase', 'D3.js'],
+    relatedIds: [1, 3, 2],
+    liveUrl: 'https://synapse.ai',
+    services: ['Product Design', 'Frontend Development', 'Backend Development', 'ML Integration', 'Enterprise Support'],
+    videoPlaceholder: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1200&h=675&fit=crop&auto=format',
+  },
+]
+
+export function getProjectBySlug(slug: string): Project | undefined {
+  return projects.find(p => p.slug === slug)
+}
+
+export function getRelatedProjects(ids: number[]): Project[] {
+  return ids.map(id => projects.find(p => p.id === id)).filter(Boolean) as Project[]
+}

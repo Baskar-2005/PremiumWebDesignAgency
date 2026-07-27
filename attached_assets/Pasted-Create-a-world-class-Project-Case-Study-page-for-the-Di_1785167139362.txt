@@ -1,0 +1,607 @@
+Create a world-class Project Case Study page for the Digital Shine portfolio website.
+
+This page should open when a visitor clicks any project from the Projects page.
+
+Do NOT create a generic portfolio detail page.
+
+Instead, create an immersive premium case study experience that tells the complete story of the project.
+
+Think like:
+• Awwwards
+• Stripe
+• Cuberto
+• Locomotive
+• Vercel
+• Apple
+• Ramotion
+
+The page should feel like a luxury presentation.
+
+====================================================
+
+PAGE TRANSITIONS
+
+Smooth page transition.
+
+Fade + Scale animation.
+
+Loading animation while images load.
+
+Smooth scrolling.
+
+Scroll progress indicator.
+
+Sticky navigation.
+
+====================================================
+
+PROJECT HERO
+
+Large full-width hero.
+
+Premium project mockup.
+
+Browser mockup or mobile mockup.
+
+Dark overlay.
+
+Animated background.
+
+Display:
+
+Project Name
+
+Project Category
+
+Client Name
+
+Completion Date
+
+Status
+(Completed)
+
+Short tagline.
+
+Example:
+
+Kasthuribai Jewellery
+
+Luxury Jewellery E-Commerce Platform
+
+Below show premium badges:
+
+Responsive
+SEO Optimized
+Lightning Fast
+Secure
+Modern UI
+
+Large CTA Buttons
+
+Visit Live Website
+
+View Source (optional)
+
+====================================================
+
+PROJECT OVERVIEW
+
+Beautiful two-column layout.
+
+Left:
+
+Large heading
+
+Project Overview
+
+Right:
+
+Explain
+
+Client goals
+
+Business problem
+
+Target audience
+
+Final solution
+
+====================================================
+
+CLIENT INFORMATION
+
+Premium information card.
+
+Display:
+
+Client Name
+
+Industry
+
+Location
+
+Website
+
+Project Duration
+
+Team Size
+
+Project Type
+
+Service Provided
+
+Budget Range
+
+Project Status
+
+====================================================
+
+PROJECT TIMELINE
+
+Beautiful animated timeline.
+
+Discovery
+
+Research
+
+Wireframes
+
+UI Design
+
+Development
+
+Testing
+
+Deployment
+
+Maintenance
+
+====================================================
+
+THE CHALLENGE
+
+Large section.
+
+Describe
+
+Problems
+
+Business challenges
+
+User pain points
+
+Technical issues
+
+Use beautiful illustration cards.
+
+====================================================
+
+OUR SOLUTION
+
+Explain how Digital Shine solved every challenge.
+
+Modern card layout.
+
+Include visuals.
+
+====================================================
+
+KEY FEATURES
+
+Luxury grid.
+
+Each feature card should have
+
+Modern icon
+
+Feature title
+
+Description
+
+Examples:
+
+Admin Dashboard
+
+Appointment Booking
+
+WhatsApp Integration
+
+Payment Gateway
+
+Firebase Authentication
+
+Inventory Management
+
+Analytics Dashboard
+
+Responsive Design
+
+Dark Mode
+
+Email Notifications
+
+Role Management
+
+CMS
+
+AI Integration
+
+SEO Optimization
+
+PWA Support
+
+====================================================
+
+TECH STACK
+
+Animated technology cards.
+
+React
+
+Next.js
+
+TypeScript
+
+TailwindCSS
+
+Node.js
+
+Firebase
+
+Supabase
+
+Cloudinary
+
+Vercel
+
+Framer Motion
+
+GSAP
+
+Stripe
+
+Razorpay
+
+GitHub
+
+Each logo should animate slightly.
+
+====================================================
+
+PROJECT GALLERY
+
+Premium gallery.
+
+Large screenshots.
+
+Desktop
+
+Tablet
+
+Mobile
+
+Dashboard
+
+Admin Panel
+
+Landing Page
+
+Product Page
+
+Checkout
+
+Lightbox animation.
+
+====================================================
+
+BEFORE VS AFTER
+
+Beautiful comparison section.
+
+Old website.
+
+New website.
+
+Interactive slider.
+
+====================================================
+
+PERFORMANCE
+
+Animated statistics.
+
+Lighthouse
+
+Performance
+
+SEO
+
+Accessibility
+
+Best Practices
+
+Load Time
+
+Core Web Vitals
+
+====================================================
+
+PROJECT RESULTS
+
+Large animated counters.
+
+Increase in Sales
+
+Increase in Visitors
+
+Faster Loading
+
+More Leads
+
+Customer Satisfaction
+
+Mobile Users
+
+====================================================
+
+CLIENT TESTIMONIAL
+
+Premium glass card.
+
+Large quotation mark.
+
+Client photo.
+
+Client name.
+
+Company.
+
+5-star rating.
+
+Long review.
+
+Animated reveal.
+
+====================================================
+
+PROJECT PRICING
+
+Premium pricing card.
+
+Show:
+
+Project Value
+
+Payment Model
+
+Timeline
+
+Support Period
+
+Additional Services
+
+Example:
+
+Project Cost
+
+₹90,000
+
+Development
+
+₹60,000
+
+UI/UX Design
+
+₹15,000
+
+SEO
+
+₹10,000
+
+Hosting & Deployment
+
+₹5,000
+
+Timeline
+
+45 Days
+
+Support
+
+12 Months
+
+Include a note:
+
+"Pricing varies depending on project requirements and custom features."
+
+====================================================
+
+DELIVERABLES
+
+Checklist.
+
+Responsive Website
+
+Admin Panel
+
+SEO Setup
+
+Performance Optimization
+
+Analytics
+
+Training
+
+Documentation
+
+Deployment
+
+Maintenance
+
+====================================================
+
+CLIENT REVIEW VIDEO
+
+Placeholder for video.
+
+Modern video card.
+
+====================================================
+
+RELATED PROJECTS
+
+Show 3 premium project cards.
+
+Hover animation.
+
+====================================================
+
+CALL TO ACTION
+
+Large premium section.
+
+Ready to Build Something Amazing?
+
+Let's create your next digital experience.
+
+Buttons:
+
+Start Your Project
+
+Book Free Consultation
+
+====================================================
+
+STICKY SIDEBAR (Desktop)
+
+Always visible.
+
+Contains:
+
+Project Summary
+
+Client
+
+Duration
+
+Budget
+
+Tech Stack
+
+Live Website
+
+Share Project
+
+Back to Projects
+
+====================================================
+
+DESIGN
+
+Luxury.
+
+Minimal.
+
+Dark.
+
+Glassmorphism.
+
+Huge typography.
+
+Soft gradients.
+
+Beautiful spacing.
+
+Rounded corners.
+
+Perfect alignment.
+
+Premium shadows.
+
+====================================================
+
+ANIMATIONS
+
+Framer Motion.
+
+GSAP.
+
+Parallax.
+
+Fade.
+
+Scale.
+
+Image zoom.
+
+Hover tilt.
+
+Magnetic buttons.
+
+Reveal animations.
+
+Counter animations.
+
+Smooth scrolling.
+
+====================================================
+
+RESPONSIVE
+
+Perfect on desktop.
+
+Tablet optimized.
+
+Fully redesigned mobile layout.
+
+Sticky bottom CTA on mobile.
+
+====================================================
+
+ADMIN FRIENDLY
+
+Every project detail should come dynamically from a structured JSON/database.
+
+Fields should include:
+
+Project Name
+Slug
+Hero Image
+Gallery Images
+Client Name
+Industry
+Location
+Project Description
+Business Challenge
+Solution
+Features
+Tech Stack
+Timeline
+Budget
+Project Duration
+Completion Date
+Project Status
+Client Review
+Client Rating
+Client Photo
+Performance Metrics
+Project Results
+Live Website URL
+GitHub URL (optional)
+Services Provided
+Related Projects
+SEO Metadata
+
+The page should automatically render based on this data, making it easy to add unlimited future projects without changing the layout.
+
+====================================================
+
+FINAL GOAL
+
+The page should feel like a premium case study presentation—not just a portfolio detail page.
+
+A potential client should finish reading and think:
+
+"Digital Shine doesn't just build websites—they solve business problems professionally."
+
+The design should be worthy of an Awwwards-quality agency portfolio while remaining fast, accessible, responsive, SEO-friendly, and production-ready.
