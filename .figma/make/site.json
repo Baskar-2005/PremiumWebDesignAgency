@@ -1,0 +1,10 @@
+{
+  "description": "Showcasing premium web design services, this elegant site captivates clients with stunning visuals and smooth animations, establishing trust and authority.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

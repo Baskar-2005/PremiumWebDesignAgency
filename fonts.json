@@ -1,0 +1,12 @@
+{
+  "fonts": [
+    { "family": "Inter", "style": "Regular" },
+    { "family": "Inter", "style": "Medium" },
+    { "family": "Inter", "style": "SemiBold" },
+    { "family": "Inter", "style": "Bold" },
+    { "family": "Space Grotesk", "style": "Regular" },
+    { "family": "Space Grotesk", "style": "Medium" },
+    { "family": "Space Grotesk", "style": "SemiBold" },
+    { "family": "Space Grotesk", "style": "Bold" }
+  ]
+}
