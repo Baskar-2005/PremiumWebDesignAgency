@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { motion, useInView, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import type { Project } from '../data/projectsData'
-import { getRelatedProjects, projects as allProjects } from '../data/projectsData'
+import { getRelatedProjects } from '../data/projectsData'
 
 // ─── Animated Counter ──────────────────────────────────────────────
 function AnimCounter({ to, suffix, prefix = '' }: { to: string; suffix: string; prefix?: string }) {
@@ -62,7 +62,15 @@ function SectionLabel({ text }: { text: string }) {
 }
 
 // ─── Main Component ───────────────────────────────────────────────
-export default function CaseStudy({ project, onBack }: { project: Project; onBack: () => void }) {
+export default function CaseStudy({
+  project,
+  onBack,
+  onOpenProject,
+}: {
+  project: Project
+  onBack: () => void
+  onOpenProject: (slug: string) => void
+}) {
   const [galleryOpen, setGalleryOpen] = useState<number | null>(null)
   const heroRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress: heroScroll } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
@@ -650,7 +658,7 @@ export default function CaseStudy({ project, onBack }: { project: Project; onBac
                 {related.map((rel, i) => (
                   <Reveal key={rel.id} delay={i * 0.08}>
                     <motion.button
-                      onClick={() => { window.scrollTo(0, 0); onBack(); setTimeout(() => {}, 100) }}
+                      onClick={() => onOpenProject(rel.slug)}
                       whileHover={{ y: -6 }}
                       style={{
                         all: 'unset', cursor: 'pointer', display: 'block', width: '100%',

@@ -4,6 +4,7 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion'
 const projects = [
   {
     id: 1,
+    slug: 'novapay',
     title: 'NovaPay',
     category: 'Fintech',
     type: 'Web App',
@@ -16,6 +17,7 @@ const projects = [
   },
   {
     id: 2,
+    slug: 'luminary-studio',
     title: 'Luminary Studio',
     category: 'Creative Agency',
     type: 'Website',
@@ -28,6 +30,7 @@ const projects = [
   },
   {
     id: 3,
+    slug: 'orbit-commerce',
     title: 'Orbit Commerce',
     category: 'E-Commerce',
     type: 'Platform',
@@ -40,6 +43,7 @@ const projects = [
   },
   {
     id: 4,
+    slug: 'synapse-ai',
     title: 'Synapse AI',
     category: 'SaaS',
     type: 'Dashboard',
@@ -52,7 +56,15 @@ const projects = [
   },
 ]
 
-function ProjectCard({ p, i }: { p: (typeof projects)[0]; i: number }) {
+function ProjectCard({
+  p,
+  i,
+  onViewProject,
+}: {
+  p: (typeof projects)[0]
+  i: number
+  onViewProject: (slug: string) => void
+}) {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
   const [hovered, setHovered] = useState(false)
@@ -68,6 +80,15 @@ function ProjectCard({ p, i }: { p: (typeof projects)[0]; i: number }) {
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.05 * i }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => onViewProject(p.slug)}
+      onKeyDown={event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault()
+          onViewProject(p.slug)
+        }
+      }}
+      role="button"
+      tabIndex={0}
       style={{ position: 'relative' }}
     >
       {/* Card */}
@@ -343,7 +364,7 @@ function ProjectContent({ p, hovered }: { p: (typeof projects)[0]; hovered: bool
   )
 }
 
-export default function Projects() {
+export default function Projects({ onViewProject }: { onViewProject: (slug: string) => void }) {
   const headerRef = useRef(null)
   const inView = useInView(headerRef, { once: true, margin: '-60px' })
 
@@ -455,7 +476,7 @@ export default function Projects() {
         {/* Project cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
           {projects.map((p, i) => (
-            <ProjectCard key={p.id} p={p} i={i} />
+            <ProjectCard key={p.id} p={p} i={i} onViewProject={onViewProject} />
           ))}
         </div>
 

@@ -88,6 +88,10 @@ export default function App() {
           <CaseStudy
             key={activeSlug}
             project={activeProject}
+            onOpenProject={(slug) => {
+              setActiveSlug(slug)
+              window.scrollTo(0, 0)
+            }}
             onBack={() => {
               setActiveSlug(null)
               setTimeout(() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }), 100)
