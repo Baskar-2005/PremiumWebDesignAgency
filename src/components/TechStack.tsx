@@ -6,17 +6,16 @@ const techs = [
     name: 'React',
     color: '#61dafb',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M12 9.861A2.139 2.139 0 1 0 12 14.14A2.139 2.139 0 1 0 12 9.861zM6.008 16.255l-.472-.12C2.018 15.246 0 13.737 0 11.996s2.018-3.25 5.536-4.139l.472-.119.133.468a23.53 23.53 0 0 0 1.363 3.578l.101.213-.101.213a23.307 23.307 0 0 0-1.363 3.578l-.133.467zM5.317 8.95c-2.674.751-4.315 1.9-4.315 3.046 0 1.145 1.641 2.294 4.315 3.046a24.95 24.95 0 0 1 1.182-3.046A24.752 24.752 0 0 1 5.317 8.95zM17.992 16.255l-.133-.467a23.357 23.357 0 0 0-1.364-3.578l-.101-.213.101-.213a23.42 23.42 0 0 0 1.364-3.578l.133-.468.473.119c3.517.889 5.535 2.398 5.535 4.139s-2.018 3.25-5.535 4.139l-.473.12zm-.491-4.258c.48 1.039.877 2.06 1.182 3.046 2.675-.752 4.315-1.901 4.315-3.046 0-1.146-1.641-2.294-4.315-3.046a24.788 24.788 0 0 1-1.182 3.046z" />
-        <path d="M6.69 8.69c-.689-.689-.727-1.73-.08-2.397.647-.667 1.695-.597 2.384.092l.101.1-.101.1a23.46 23.46 0 0 0-2.184 2.205h-.12z" opacity="0.5" />
       </svg>
     ),
   },
   {
     name: 'Next.js',
-    color: '#fff',
+    color: '#ffffff',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0z" />
       </svg>
     ),
@@ -25,7 +24,7 @@ const techs = [
     name: 'TypeScript',
     color: '#3178c6',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z" />
       </svg>
     ),
@@ -34,7 +33,7 @@ const techs = [
     name: 'Node.js',
     color: '#339933',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.079-.383.585-.203.703-.25 1.328-.604.065-.037.151-.023.218.017l2.256 1.339c.082.045.198.045.272 0l8.795-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.19-.137-.242l-8.791-5.072c-.081-.047-.189-.047-.271 0L3.075 6.68c-.084.053-.139.146-.139.241v10.15c0 .097.055.189.137.236l2.408 1.389c1.307.654 2.108-.116 2.108-.891V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.111.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551L2.28 18.675A1.85 1.85 0 0 1 1.355 17.1V6.921c0-.66.353-1.273.922-1.6l8.795-5.082c.557-.315 1.296-.315 1.848 0l8.794 5.082c.57.327.924.94.924 1.6v10.179c0 .659-.354 1.267-.924 1.598l-8.794 5.079c-.28.163-.6.247-.922.247z" />
       </svg>
     ),
@@ -43,7 +42,7 @@ const techs = [
     name: 'Supabase',
     color: '#3ecf8e',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C.28 12.636.68 13.5 1.5 13.5h7.517l.518 9.467c.015.986 1.26 1.41 1.874.637l9.262-11.652c.484-.585.084-1.449-.732-1.449h-7.517L11.9 1.036z" />
       </svg>
     ),
@@ -52,7 +51,7 @@ const techs = [
     name: 'Tailwind',
     color: '#38bdf8',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
       </svg>
     ),
@@ -61,16 +60,16 @@ const techs = [
     name: 'Framer',
     color: '#9b8fff',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z" />
       </svg>
     ),
   },
   {
     name: 'Vercel',
-    color: '#fff',
+    color: '#ffffff',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M24 22.525H0l12-21.05 12 21.05z" />
       </svg>
     ),
@@ -79,16 +78,16 @@ const techs = [
     name: 'Firebase',
     color: '#ffca28',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M3.89 15.672L6.255.461A.542.542 0 0 1 7.27.288l2.543 4.771zm16.794 3.692l-2.25-14a.54.54 0 0 0-.919-.295L3.316 19.365l7.856 4.427a1.621 1.621 0 0 0 1.588 0zM14.3 7.147l-1.818-3.482a.542.542 0 0 0-.96 0L3.53 17.984z" />
       </svg>
     ),
   },
   {
     name: 'GitHub',
-    color: '#fff',
+    color: '#ffffff',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
       </svg>
     ),
@@ -97,7 +96,7 @@ const techs = [
     name: 'Cloudflare',
     color: '#f38020',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M16.608 14.992l.312-.007c.97-.068 1.871-.498 2.521-1.226a3.75 3.75 0 0 0 .878-2.588 3.77 3.77 0 0 0-3.768-3.509 3.74 3.74 0 0 0-.667.06A4.16 4.16 0 0 0 11.86 6a4.16 4.16 0 0 0-4.157 3.862 3.25 3.25 0 0 0-2.05 1.028 3.26 3.26 0 0 0-.84 2.19c0 1.797 1.46 3.257 3.257 3.257h.313zM16.6 13.882H8.07a2.148 2.148 0 0 1-2.149-2.148 2.15 2.15 0 0 1 1.91-2.139l.55-.059.01-.553a3.05 3.05 0 0 1 3.051-2.964 3.05 3.05 0 0 1 2.761 1.75l.228.49.53-.139a2.656 2.656 0 0 1 3.155 2.596 2.66 2.66 0 0 1-2.656 2.656l-.5.003-.36.507z" />
       </svg>
     ),
@@ -106,7 +105,7 @@ const techs = [
     name: 'GSAP',
     color: '#88ce02',
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
         <path d="M0 0l12 24L24 0H0z" opacity="0.6" />
         <path d="M6 0l6 12L18 0H6z" />
       </svg>
@@ -114,44 +113,180 @@ const techs = [
   },
 ]
 
+const row1 = techs.slice(0, 6)
+const row2 = techs.slice(6, 12)
+
+function MarqueeRow({
+  items,
+  direction = 'left',
+  speed = 35,
+}: {
+  items: typeof techs
+  direction?: 'left' | 'right'
+  speed?: number
+}) {
+  // Triple the items for seamless looping
+  const repeated = [...items, ...items, ...items]
+
+  return (
+    <div style={{ overflow: 'hidden', width: '100%', position: 'relative' }}>
+      <motion.div
+        style={{
+          display: 'flex',
+          gap: 16,
+          width: 'max-content',
+        }}
+        animate={{ x: direction === 'left' ? ['0%', '-33.333%'] : ['-33.333%', '0%'] }}
+        transition={{
+          duration: speed,
+          ease: 'linear',
+          repeat: Infinity,
+        }}
+      >
+        {repeated.map((t, i) => (
+          <TechCard key={`${t.name}-${i}`} tech={t} />
+        ))}
+      </motion.div>
+    </div>
+  )
+}
+
+function TechCard({ tech }: { tech: (typeof techs)[0] }) {
+  return (
+    <motion.div
+      whileHover={{ y: -6, scale: 1.05 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+      style={{
+        flexShrink: 0,
+        width: 140,
+        padding: '22px 16px',
+        borderRadius: 20,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 12,
+        cursor: 'default',
+        position: 'relative',
+        background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)',
+        border: '1px solid rgba(255,255,255,0.08)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+        transition: 'border-color 0.3s, box-shadow 0.3s, background 0.3s',
+      }}
+      onMouseEnter={e => {
+        const el = e.currentTarget as HTMLDivElement
+        el.style.borderColor = `${tech.color}50`
+        el.style.boxShadow = `0 0 40px ${tech.color}20, 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 ${tech.color}15`
+        el.style.background = `linear-gradient(135deg, ${tech.color}08 0%, rgba(255,255,255,0.03) 100%)`
+      }}
+      onMouseLeave={e => {
+        const el = e.currentTarget as HTMLDivElement
+        el.style.borderColor = 'rgba(255,255,255,0.08)'
+        el.style.boxShadow = 'none'
+        el.style.background = 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)'
+      }}
+    >
+      {/* Icon glow backdrop */}
+      <div
+        style={{
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: 52,
+          height: 52,
+          borderRadius: 14,
+          background: `radial-gradient(circle at center, ${tech.color}18 0%, transparent 70%)`,
+        }}
+      >
+        <div style={{ color: tech.color, filter: `drop-shadow(0 0 8px ${tech.color}60)` }}>
+          {tech.icon}
+        </div>
+      </div>
+
+      <span
+        style={{
+          fontFamily: 'Space Grotesk, sans-serif',
+          fontSize: 13,
+          fontWeight: 600,
+          color: 'rgba(255,255,255,0.65)',
+          letterSpacing: '-0.01em',
+          whiteSpace: 'nowrap',
+        }}
+      >
+        {tech.name}
+      </span>
+    </motion.div>
+  )
+}
+
 export default function TechStack() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
     <section style={{ padding: '120px 0', position: 'relative', overflow: 'hidden' }}>
+      {/* Ambient background glow */}
       <div
         style={{
           position: 'absolute',
-          inset: 0,
-          background: 'linear-gradient(180deg, transparent, rgba(13,13,13,0.5) 50%, transparent)',
+          top: '40%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: 800,
+          height: 400,
+          background: 'radial-gradient(ellipse at center, rgba(79,140,255,0.06) 0%, transparent 70%)',
           pointerEvents: 'none',
         }}
       />
 
+      {/* Subtle grid texture */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage:
+            'linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)',
+          backgroundSize: '60px 60px',
+          pointerEvents: 'none',
+          maskImage: 'radial-gradient(ellipse 80% 60% at 50% 50%, black 0%, transparent 100%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 80% 60% at 50% 50%, black 0%, transparent 100%)',
+        }}
+      />
+
+      {/* Heading */}
       <div className="container-xl" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
-          style={{ textAlign: 'center', marginBottom: 64 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          style={{ textAlign: 'center', marginBottom: 72 }}
         >
-          <div className="section-label" style={{ justifyContent: 'center', marginBottom: 20 }}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="section-label"
+            style={{ justifyContent: 'center', marginBottom: 20 }}
+          >
             Our Stack
-          </div>
+          </motion.div>
+
           <h2
             style={{
               fontFamily: 'Space Grotesk, sans-serif',
-              fontSize: 'clamp(32px, 3vw, 48px)',
+              fontSize: 'clamp(32px, 3.5vw, 52px)',
               fontWeight: 700,
               letterSpacing: '-0.04em',
               color: '#fff',
+              lineHeight: 1.1,
+              marginBottom: 16,
             }}
           >
             Built with the{' '}
             <span
               style={{
-                background: 'linear-gradient(135deg, #4f8cff, #7b5cff)',
+                background: 'linear-gradient(135deg, #4f8cff 0%, #a78bfa 50%, #38bdf8 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -160,62 +295,115 @@ export default function TechStack() {
               best tools.
             </span>
           </h2>
-        </motion.div>
 
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.25 }}
+            style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: 16,
+              color: 'rgba(255,255,255,0.4)',
+              maxWidth: 460,
+              margin: '0 auto',
+              lineHeight: 1.7,
+            }}
+          >
+            A carefully chosen stack that delivers speed, scalability, and an exceptional developer experience.
+          </motion.p>
+        </motion.div>
+      </div>
+
+      {/* Marquee rows */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+        style={{ display: 'flex', flexDirection: 'column', gap: 16 }}
+      >
+        {/* Left-fade & right-fade masks */}
+        <div style={{ position: 'relative' }}>
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              zIndex: 2,
+              pointerEvents: 'none',
+              background:
+                'linear-gradient(90deg, #050505 0%, transparent 12%, transparent 88%, #050505 100%)',
+            }}
+          />
+          <MarqueeRow items={row1} direction="left" speed={38} />
+        </div>
+
+        <div style={{ position: 'relative' }}>
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              zIndex: 2,
+              pointerEvents: 'none',
+              background:
+                'linear-gradient(90deg, #050505 0%, transparent 12%, transparent 88%, #050505 100%)',
+            }}
+          />
+          <MarqueeRow items={row2} direction="right" speed={42} />
+        </div>
+      </motion.div>
+
+      {/* Bottom count badge */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, delay: 0.55 }}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          marginTop: 56,
+        }}
+      >
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(6, 1fr)',
+            display: 'inline-flex',
+            alignItems: 'center',
             gap: 12,
+            padding: '12px 24px',
+            borderRadius: 100,
+            border: '1px solid rgba(255,255,255,0.08)',
+            background: 'rgba(255,255,255,0.03)',
+            backdropFilter: 'blur(8px)',
           }}
         >
-          {techs.map((t, i) => (
-            <motion.div
-              key={t.name}
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.4, delay: 0.04 * i, ease: [0.34, 1.56, 0.64, 1] }}
-              whileHover={{ y: -8, scale: 1.08 }}
-              style={{
-                background: '#0d0d0d',
-                border: '1px solid rgba(255,255,255,0.07)',
-                borderRadius: 18,
-                padding: '24px 16px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: 10,
-                cursor: 'default',
-              }}
-              onMouseEnter={e => {
-                const el = e.currentTarget as HTMLDivElement
-                el.style.borderColor = `${t.color}40`
-                el.style.boxShadow = `0 0 30px ${t.color}15`
-                el.style.background = '#141414'
-              }}
-              onMouseLeave={e => {
-                const el = e.currentTarget as HTMLDivElement
-                el.style.borderColor = 'rgba(255,255,255,0.07)'
-                el.style.boxShadow = 'none'
-                el.style.background = '#0d0d0d'
-              }}
-            >
-              <div style={{ color: t.color, opacity: 0.9 }}>{t.icon}</div>
-              <span
+          <div style={{ display: 'flex', gap: -6 }}>
+            {[
+              '#61dafb', '#ffffff', '#3178c6', '#339933',
+            ].map((c, i) => (
+              <div
+                key={i}
                 style={{
-                  fontFamily: 'Space Grotesk, sans-serif',
-                  fontSize: 12,
-                  fontWeight: 600,
-                  color: 'rgba(255,255,255,0.55)',
-                  letterSpacing: '-0.01em',
+                  width: 8,
+                  height: 8,
+                  borderRadius: '50%',
+                  background: c,
+                  boxShadow: `0 0 6px ${c}`,
+                  marginLeft: i > 0 ? 4 : 0,
                 }}
-              >
-                {t.name}
-              </span>
-            </motion.div>
-          ))}
+              />
+            ))}
+          </div>
+          <span
+            style={{
+              fontFamily: 'Space Grotesk, sans-serif',
+              fontSize: 13,
+              fontWeight: 500,
+              color: 'rgba(255,255,255,0.45)',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            12+ technologies powering every project
+          </span>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
