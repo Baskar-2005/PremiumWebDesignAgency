@@ -70,6 +70,8 @@ export default function App() {
   const [loaded, setLoaded] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [activeSlug, setActiveSlug] = useState<string | null>(null)
+  const [caseStudySource, setCaseStudySource] = useState<'modal' | 'section'>('section')
+  const [modalTrigger, setModalTrigger] = useState(0)
 
   useEffect(() => {
     setIsMobile(window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768)
@@ -93,8 +95,14 @@ export default function App() {
               window.scrollTo(0, 0)
             }}
             onBack={() => {
+              const wasModal = caseStudySource === 'modal'
               setActiveSlug(null)
-              setTimeout(() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }), 100)
+              if (wasModal) {
+                // Reopen the AllProjectsModal the user came from
+                setTimeout(() => setModalTrigger(t => t + 1), 350)
+              } else {
+                setTimeout(() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }), 100)
+              }
             }}
           />
         ) : (
@@ -117,7 +125,14 @@ export default function App() {
               {divider}
               <TechStack />
               {divider}
-              <Projects onViewProject={(slug) => { setActiveSlug(slug); window.scrollTo(0, 0) }} />
+              <Projects
+                onViewProject={(slug, source = 'section') => {
+                  setActiveSlug(slug)
+                  setCaseStudySource(source)
+                  window.scrollTo(0, 0)
+                }}
+                modalTrigger={modalTrigger}
+              />
               {divider}
               <Process />
               {divider}

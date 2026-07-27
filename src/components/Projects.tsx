@@ -72,7 +72,7 @@ function AllProjectsModal({
   onViewProject,
 }: {
   onClose: () => void
-  onViewProject: (slug: string) => void
+  onViewProject: (slug: string, source: 'modal' | 'section') => void
 }) {
   const [filter, setFilter] = useState('All')
   const [hoveredId, setHoveredId] = useState<number | null>(null)
@@ -280,7 +280,7 @@ function AllProjectsModal({
                 hovered={hoveredId === p.id}
                 onMouseEnter={() => setHoveredId(p.id)}
                 onMouseLeave={() => setHoveredId(null)}
-                onClick={() => { onClose(); setTimeout(() => onViewProject(p.slug), 200) }}
+                onClick={() => { onClose(); setTimeout(() => onViewProject(p.slug, 'modal'), 200) }}
               />
             ))}
           </motion.div>
@@ -617,7 +617,7 @@ function ProjectCard({
 }: {
   p: typeof projects[0]
   i: number
-  onViewProject: (slug: string) => void
+  onViewProject: (slug: string, source: 'modal' | 'section') => void
 }) {
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
@@ -634,11 +634,11 @@ function ProjectCard({
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.05 * i }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      onClick={() => onViewProject(p.slug)}
+      onClick={() => onViewProject(p.slug, 'section')}
       onKeyDown={event => {
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault()
-          onViewProject(p.slug)
+          onViewProject(p.slug, 'section')
         }
       }}
       role="button"
@@ -898,10 +898,21 @@ function ProjectContent({ p, hovered }: { p: typeof projects[0]; hovered: boolea
 }
 
 // ─── Section ───────────────────────────────────────────────────────────────────
-export default function Projects({ onViewProject }: { onViewProject: (slug: string) => void }) {
+export default function Projects({
+  onViewProject,
+  modalTrigger,
+}: {
+  onViewProject: (slug: string, source: 'modal' | 'section') => void
+  modalTrigger?: number
+}) {
   const headerRef = useRef(null)
   const inView = useInView(headerRef, { once: true, margin: '-60px' })
   const [showAll, setShowAll] = useState(false)
+
+  // When App.tsx signals "reopen modal after back from case study", honour it
+  useEffect(() => {
+    if (modalTrigger) setShowAll(true)
+  }, [modalTrigger])
 
   return (
     <>
