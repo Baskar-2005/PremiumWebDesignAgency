@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence, useMotionValue, useSpring } from 'framer-motion'
+import { useIsMobile } from '../hooks/useIsMobile'
 
 const navLinks = [
   { label: 'Services', href: '#services' },
@@ -101,6 +102,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('')
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60)
@@ -132,7 +134,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ─── INITIAL full-width bar (only visible when at top) ─── */}
+      {/* ─── INITIAL full-width bar (always visible on mobile) ─── */}
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -143,12 +145,17 @@ export default function Navbar() {
           left: 0,
           right: 0,
           zIndex: 1000,
-          pointerEvents: scrolled ? 'none' : 'auto',
+          pointerEvents: scrolled && !isMobile ? 'none' : 'auto',
         }}
       >
         <motion.div
-          animate={{ opacity: scrolled ? 0 : 1 }}
+          animate={{ opacity: scrolled && !isMobile ? 0 : 1 }}
           transition={{ duration: 0.3 }}
+          style={{
+            background: isMobile && scrolled ? 'rgba(5,5,5,0.95)' : 'transparent',
+            backdropFilter: isMobile && scrolled ? 'blur(16px)' : 'none',
+            WebkitBackdropFilter: isMobile && scrolled ? 'blur(16px)' : 'none',
+          }}
         >
           <div className="container-xl flex items-center justify-between" style={{ height: 72 }}>
 
@@ -255,11 +262,12 @@ export default function Navbar() {
         </motion.div>
       </motion.nav>
 
-      {/* ─── SCROLLED floating pill (appears after scroll) ─── */}
+      {/* ─── SCROLLED floating pill (desktop only; hidden on mobile via CSS) ─── */}
       <AnimatePresence>
-        {scrolled && (
+        {scrolled && !isMobile && (
           <motion.div
             key="floating-pill"
+            className="floating-nav-pill"
             initial={{ y: -80, opacity: 0, scale: 0.92 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             exit={{ y: -60, opacity: 0, scale: 0.94 }}
@@ -293,7 +301,7 @@ export default function Navbar() {
                 whileHover={{ scale: 1.1, rotate: 8 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 15 }}
                 style={{
-                  background: 'none', border: 'none', cursor: 'pointer',
+                  border: 'none', cursor: 'pointer',
                   width: 30, height: 30, borderRadius: 8,
                   background: 'linear-gradient(135deg, #4f8cff, #7b5cff)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',

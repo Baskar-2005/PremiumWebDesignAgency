@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 
 const services = [
   {
@@ -380,15 +380,7 @@ export default function Services() {
 
       <div className="container-xl" style={{ position: 'relative', zIndex: 1 }}>
         {/* Header */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 2fr',
-            gap: 80,
-            alignItems: 'end',
-            marginBottom: 64,
-          }}
-        >
+        <div className="services-header-grid">
           <motion.div
             initial={{ opacity: 0, y: 32 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -492,13 +484,7 @@ export default function Services() {
         </div>
 
         {/* Service grid */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: 12,
-          }}
-        >
+        <div className="grid-4col">
           {services.map((s, i) => (
             <ServiceCard key={s.num} s={s} i={i} inView={inView} />
           ))}

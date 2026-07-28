@@ -204,13 +204,7 @@ export default function About() {
 
       <div className="container-xl" style={{ position: 'relative', zIndex: 1 }}>
         {/* Split headline */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: 80,
-          alignItems: 'end',
-          marginBottom: 80,
-        }}>
+        <div className="about-split-grid">
           <div>
             {/* Label */}
             <motion.div
@@ -323,9 +317,7 @@ export default function About() {
         </div>
 
         {/* Stats grid */}
-        <div style={{
-          display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12,
-        }}>
+        <div className="grid-4col">
           {stats.map((s, i) => (
             <StatCard key={s.label} s={s} i={i} inView={inView} />
           ))}

@@ -466,15 +466,7 @@ export default function WhyUs() {
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: 1,
-            borderRadius: 18,
-            overflow: 'hidden',
-            marginBottom: 40,
-            background: 'rgba(255,255,255,0.04)',
-          }}
+          className="whyus-stats-strip"
         >
           {stats.map((s, i) => (
             <div
@@ -515,13 +507,7 @@ export default function WhyUs() {
         </motion.div>
 
         {/* Cards grid */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: 12,
-          }}
-        >
+        <div className="grid-4col">
           {reasons.map((r, i) => (
             <WhyCard key={r.title} r={r} i={i} inView={inView} />
           ))}

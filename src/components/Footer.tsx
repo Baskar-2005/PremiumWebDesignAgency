@@ -176,6 +176,7 @@ export default function Footer({ onNavigate }: { onNavigate: (page: Page) => voi
             }}
           />
           <div
+            className="footer-cta-inner"
             style={{
               background: 'linear-gradient(135deg, rgba(10,10,18,0.97), rgba(13,10,22,0.97))',
               borderRadius: 27,
@@ -437,12 +438,7 @@ export default function Footer({ onNavigate }: { onNavigate: (page: Page) => voi
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2 }}
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: 40,
-            paddingBottom: 56,
-          }}
+          className="footer-links-grid"
         >
           {Object.entries(footerLinks).map(([category, links], ci) => (
             <motion.div

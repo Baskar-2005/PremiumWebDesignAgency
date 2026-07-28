@@ -2170,3 +2170,186 @@ body {
     animation: none;
   }
 }
+
+/* ════════════════════════════════════════════════════
+   RESPONSIVE GRID UTILITIES
+   ════════════════════════════════════════════════════ */
+
+/* Hero two-column */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* About split header */
+.about-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 80px;
+}
+
+/* Generic 4-column grid */
+.grid-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Generic 3-column grid */
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* Services header 1fr 2fr */
+.services-header-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+
+/* WhyUs stats strip 4-col */
+.whyus-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* FAQ layout */
+.faq-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 100px;
+  align-items: start;
+}
+
+/* FAQ sticky left column */
+.faq-sticky-col {
+  position: sticky;
+  top: 120px;
+}
+
+/* Footer links 3-col */
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-bottom: 56px;
+}
+
+/* Modal projects 2-col */
+.modal-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Project card inner grid */
+.project-card-inner {
+  display: grid;
+  min-height: 380px;
+  cursor: pointer;
+}
+.project-card-inner-even { grid-template-columns: 1fr 1.15fr; }
+.project-card-inner-odd  { grid-template-columns: 1.15fr 1fr; }
+
+/* ── Tablet (≤ 900px) ── */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero-mockup-col { display: none; }
+
+  .about-split-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+
+  .grid-4col { grid-template-columns: repeat(2, 1fr); }
+
+  .services-header-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+
+  .whyus-stats-strip { grid-template-columns: repeat(2, 1fr); }
+  .whyus-stats-strip > div:nth-child(2) { border-right: none; }
+
+  .faq-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .faq-sticky-col { position: relative !important; top: auto !important; }
+
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .modal-projects-grid { grid-template-columns: 1fr; }
+
+  .project-card-inner-even,
+  .project-card-inner-odd {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+  /* Image on top, content below for all stacked cards */
+  .project-card-inner-even .project-card-image-col { order: -1; min-height: 240px; }
+  .project-card-inner-odd  .project-card-image-col { order: -1; min-height: 240px; }
+}
+
+/* ── Mobile (≤ 600px) ── */
+@media (max-width: 600px) {
+  .grid-4col { grid-template-columns: 1fr; }
+  .grid-3col { grid-template-columns: repeat(2, 1fr); }
+
+  .whyus-stats-strip { grid-template-columns: repeat(2, 1fr); }
+
+  .footer-links-grid { grid-template-columns: 1fr; gap: 28px; }
+
+  /* Footer CTA banner */
+  .footer-cta-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 28px !important;
+  }
+
+  /* Hero section padding */
+  .hero-section { padding-top: 80px !important; padding-bottom: 60px !important; }
+
+  /* Navbar floating pill — hide nav links, show only logo+hamburger on mobile */
+  .floating-pill-links { display: none !important; }
+  .floating-pill-divider { display: none !important; }
+  .floating-pill-cta { display: none !important; }
+
+  /* Mobile navbar — keep it always visible and interactive */
+  .navbar-initial {
+    pointer-events: auto !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ── Keep floating pill off mobile so hamburger stays accessible ── */
+@media (max-width: 767px) {
+  .floating-nav-pill { display: none !important; }
+  .navbar-initial-wrap {
+    pointer-events: auto !important;
+  }
+  .navbar-initial-bar {
+    opacity: 1 !important;
+  }
+}

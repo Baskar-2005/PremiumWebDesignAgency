@@ -341,11 +341,7 @@ export default function Numbers() {
         </motion.div>
 
         {/* Numbers grid */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: 12,
-        }}>
+        <div className="grid-3col">
           {numbers.map((n, i) => (
             <NumberCard key={n.label} n={n} i={i} inView={inView} />
           ))}

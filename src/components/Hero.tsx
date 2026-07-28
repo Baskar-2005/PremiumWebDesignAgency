@@ -281,6 +281,7 @@ export default function Hero() {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      className="hero-section"
       style={{
         position: 'relative',
         minHeight: '100vh',
@@ -348,14 +349,7 @@ export default function Hero() {
       ))}
 
       <div className="container-xl w-full">
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 80,
-            alignItems: 'center',
-          }}
-        >
+        <div className="hero-grid">
           {/* Left: copy */}
           <motion.div variants={container} initial="hidden" animate="show">
             {/* Badge */}
@@ -533,6 +527,7 @@ export default function Hero() {
 
           {/* Right: browser mockup */}
           <motion.div
+            className="hero-mockup-col"
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5, ease: [0.76, 0, 0.24, 1] }}

@@ -44,19 +44,12 @@ export default function FAQ() {
   return (
     <section ref={ref} style={{ padding: '120px 0', position: 'relative' }}>
       <div className="container-xl">
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1.6fr',
-            gap: 100,
-            alignItems: 'start',
-          }}
-        >
+        <div className="faq-layout-grid">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7 }}
-            style={{ position: 'sticky', top: 120 }}
+            className="faq-sticky-col"
           >
             <div className="section-label" style={{ marginBottom: 20 }}>FAQs</div>
             <h2

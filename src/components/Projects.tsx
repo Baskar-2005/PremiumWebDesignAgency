@@ -387,11 +387,7 @@ function AllProjectsModal({
         <AnimatePresence mode="popLayout">
           <motion.div
             key={filter}
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
-              gap: 16,
-            }}
+            className="modal-projects-grid"
           >
             {visible.map((p, i) => (
               <ModalCard
@@ -774,14 +770,12 @@ function ProjectCard({
             : '0 0 0 rgba(0,0,0,0)',
         }}
         transition={{ duration: 0.4 }}
+        className={`project-card-inner project-card-inner-${i % 2 === 0 ? 'even' : 'odd'}`}
         style={{
           background: 'linear-gradient(135deg, #0e0e0e 0%, #0a0a0a 100%)',
           border: '1px solid rgba(255,255,255,0.07)',
           borderRadius: 28,
           overflow: 'hidden',
-          display: 'grid',
-          gridTemplateColumns: i % 2 === 0 ? '1fr 1.15fr' : '1.15fr 1fr',
-          minHeight: 380,
           cursor: 'pointer',
         }}
       >
