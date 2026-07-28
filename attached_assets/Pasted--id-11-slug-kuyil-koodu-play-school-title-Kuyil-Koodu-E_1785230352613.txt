@@ -1,0 +1,287 @@
+{
+  id: 11,
+  slug: 'kuyil-koodu-play-school',
+  title: 'Kuyil Koodu Early Education Centre',
+  tagline: 'Nurturing young minds through joyful learning and creative exploration',
+  category: 'Education',
+  type: 'Play School Website',
+  client: 'Kuyil Koodu Early Education Centre',
+  industry: 'Early Childhood Education',
+  location: 'Tamil Nadu',
+  website: 'https://kuyilkooduplayschool.com',
+  duration: '42 Days',
+  teamSize: '3 Members',
+  completionDate: 'December 2026',
+  status: 'Completed',
+  budgetRange: '₹90,000',
+
+  budgetBreakdown: [
+    { label: 'UI / UX Design', amount: '₹20,000' },
+    { label: 'Frontend Development', amount: '₹32,000' },
+    { label: 'Backend Development', amount: '₹23,000' },
+    { label: 'Deployment & SEO', amount: '₹15,000' },
+  ],
+
+  supportPeriod: '12 Months',
+
+  color: '#F97316',
+  year: '2026',
+  num: '11',
+
+  heroImg:
+    'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1400&h=800&fit=crop&auto=format',
+
+  galleryImgs: [
+    {
+      url: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=900&h=600&fit=crop&auto=format',
+      label: 'Homepage'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=900&h=600&fit=crop&auto=format',
+      label: 'Learning Programs'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1516627145497-6c9c98b5049f?w=900&h=600&fit=crop&auto=format',
+      label: 'Classrooms'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?w=900&h=600&fit=crop&auto=format',
+      label: 'Activities'
+    }
+  ],
+
+  badges: [
+    'Responsive',
+    'Admissions',
+    'SEO Optimized',
+    'Premium Design',
+    'Fast Performance'
+  ],
+
+  overview: {
+    heading:
+      'Creating a warm and engaging digital experience for a modern preschool.',
+    goals:
+      'Build a vibrant website that reflects the school’s caring environment, introduces learning programs, and simplifies admission enquiries for parents.',
+    problem:
+      'Parents had limited information about the school’s curriculum, activities, and facilities, making admissions dependent on offline visits.',
+    audience:
+      'Parents of children aged 2–6 years seeking a safe, nurturing, and activity-based early education environment.',
+    solution:
+      'Developed a colorful, child-friendly website with admission enquiry forms, program information, gallery, parent testimonials, and responsive design.'
+  },
+
+  challenges: [
+    {
+      title: 'Parent Trust',
+      desc: 'Creating confidence through a welcoming and professional online presence.',
+      icon: '👨‍👩‍👧'
+    },
+    {
+      title: 'Showcasing Facilities',
+      desc: 'Highlighting classrooms, play areas, and learning spaces.',
+      icon: '🏫'
+    },
+    {
+      title: 'Admissions',
+      desc: 'Making admission enquiries quick and simple.',
+      icon: '📝'
+    },
+    {
+      title: 'Performance',
+      desc: 'Maintaining fast loading despite colorful imagery.',
+      icon: '⚡'
+    }
+  ],
+
+  solutions: [
+    {
+      title: 'Friendly UI Design',
+      desc: 'Bright colors, playful illustrations, and smooth interactions.',
+      icon: '🎨'
+    },
+    {
+      title: 'Program Showcase',
+      desc: 'Dedicated pages for Playgroup, Pre-KG, LKG, and UKG.',
+      icon: '📚'
+    },
+    {
+      title: 'Admission System',
+      desc: 'Easy online enquiry and callback request forms.',
+      icon: '📨'
+    },
+    {
+      title: 'SEO Optimization',
+      desc: 'Improved local visibility for preschool-related searches.',
+      icon: '🚀'
+    }
+  ],
+
+  features: [
+    {
+      title: 'Programs Overview',
+      desc: 'Complete details of Playgroup, Pre-KG, LKG and UKG.',
+      icon: '🎓'
+    },
+    {
+      title: 'Activity Gallery',
+      desc: 'Showcase of events, classrooms, and student activities.',
+      icon: '📸'
+    },
+    {
+      title: 'Admission Enquiry',
+      desc: 'Simple online admission enquiry form.',
+      icon: '📝'
+    },
+    {
+      title: 'Facilities',
+      desc: 'Highlight learning environment and child-friendly infrastructure.',
+      icon: '🏫'
+    },
+    {
+      title: 'Responsive Design',
+      desc: 'Perfect experience on all devices.',
+      icon: '📱'
+    },
+    {
+      title: 'SEO Optimized',
+      desc: 'Optimized for local preschool searches.',
+      icon: '📈'
+    },
+    {
+      title: 'WhatsApp Integration',
+      desc: 'Quick communication with parents.',
+      icon: '💬'
+    },
+    {
+      title: 'Google Maps',
+      desc: 'Easy navigation to the campus.',
+      icon: '📍'
+    }
+  ],
+
+  techStack: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Firebase',
+    'Framer Motion',
+    'Netlify'
+  ],
+
+  timeline: [
+    {
+      phase: 'Research',
+      duration: '5 Days',
+      desc: 'Understanding preschool branding and parent expectations.'
+    },
+    {
+      phase: 'UI / UX Design',
+      duration: '8 Days',
+      desc: 'Designing playful and engaging interfaces.'
+    },
+    {
+      phase: 'Development',
+      duration: '20 Days',
+      desc: 'Responsive frontend and admission enquiry integration.'
+    },
+    {
+      phase: 'Testing',
+      duration: '5 Days',
+      desc: 'Performance, accessibility, and responsive testing.'
+    },
+    {
+      phase: 'Deployment',
+      duration: '4 Days',
+      desc: 'Website launch and SEO setup.'
+    }
+  ],
+
+  performance: [
+    { label: 'Performance', score: 99, color: '#22C55E' },
+    { label: 'Accessibility', score: 98, color: '#22C55E' },
+    { label: 'Best Practices', score: 100, color: '#22C55E' },
+    { label: 'SEO', score: 100, color: '#22C55E' }
+  ],
+
+  results: [
+    {
+      value: '99',
+      suffix: '/100',
+      label: 'Lighthouse Score'
+    },
+    {
+      value: '100',
+      suffix: '%',
+      label: 'Mobile Responsive'
+    },
+    {
+      value: '1.9',
+      suffix: 's',
+      label: 'Average Load Time'
+    },
+    {
+      value: '60',
+      suffix: '%',
+      label: 'Increase in Admission Enquiries',
+      prefix: '+'
+    },
+    {
+      value: '55',
+      suffix: '%',
+      label: 'Higher Parent Engagement',
+      prefix: '+'
+    },
+    {
+      value: '24',
+      suffix: '/7',
+      label: 'Website Availability'
+    }
+  ],
+
+  testimonial: {
+    quote:
+      'Digital Shine beautifully captured the warmth and joy of our preschool. Parents now find it much easier to learn about our programs and contact us for admissions.',
+    name: 'Principal',
+    role: 'Head of School',
+    company: 'Kuyil Koodu Early Education Centre',
+    avatar:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&auto=format',
+    rating: 5
+  },
+
+  deliverables: [
+    'School Website',
+    'Responsive Design',
+    'Admissions Enquiry',
+    'Programs Showcase',
+    'Activity Gallery',
+    'SEO Optimization',
+    'Performance Optimization',
+    'Hosting & Deployment',
+    'Analytics Integration',
+    '12 Months Support'
+  ],
+
+  tags: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Framer Motion'
+  ],
+
+  relatedIds: [10, 9, 8],
+
+  liveUrl: 'https://kuyilkooduplayschool.com',
+
+  services: [
+    'UI/UX Design',
+    'Frontend Development',
+    'SEO',
+    'Performance Optimization',
+    'Deployment'
+  ],
+
+  videoPlaceholder:
+    'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&h=675&fit=crop&auto=format'
+}

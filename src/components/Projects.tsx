@@ -152,9 +152,39 @@ const projects = [
     metric: '98/100',
     metricLabel: 'Lighthouse',
   },
+  {
+    id: 11,
+    slug: 'kuyil-koodu-play-school',
+    title: 'Kuyil Koodu Early Education Centre',
+    category: 'Education',
+    type: 'Play School Website',
+    desc: 'A vibrant, child-friendly school website with admission enquiry forms, program showcases, and activity gallery — 99/100 Lighthouse score for a Tamil Nadu preschool.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    img: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=900&h=640&fit=crop&auto=format',
+    color: '#F97316',
+    year: '2026',
+    num: '11',
+    metric: '99/100',
+    metricLabel: 'Lighthouse',
+  },
+  {
+    id: 12,
+    slug: 'fab-adila-boutique',
+    title: 'Fab Adila Boutique',
+    category: 'Fashion',
+    type: 'Boutique Website',
+    desc: 'A luxurious boutique website for designer ethnic wear — bridal collections, lookbook gallery, WhatsApp ordering, and a 99/100 Lighthouse score.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    img: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=900&h=640&fit=crop&auto=format',
+    color: '#A8557A',
+    year: '2027',
+    num: '12',
+    metric: '99/100',
+    metricLabel: 'Lighthouse',
+  },
 ]
 
-const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage', 'Textile & Fashion', 'Food Export', 'Construction', 'Healthcare', 'Renewable Energy']
+const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage', 'Textile & Fashion', 'Food Export', 'Construction', 'Healthcare', 'Renewable Energy', 'Education', 'Fashion']
 
 // ─── All Projects Modal ────────────────────────────────────────────────────────
 function AllProjectsModal({
@@ -167,7 +197,8 @@ function AllProjectsModal({
   const [filter, setFilter] = useState('All')
   const [hoveredId, setHoveredId] = useState<number | null>(null)
 
-  const visible = filter === 'All' ? projects : projects.filter(p => p.category === filter)
+  const filtered = filter === 'All' ? projects : projects.filter(p => p.category === filter)
+  const visible = [...filtered].reverse()
 
   // Lock body scroll
   useEffect(() => {
