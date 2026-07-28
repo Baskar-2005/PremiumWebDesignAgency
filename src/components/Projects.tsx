@@ -122,9 +122,39 @@ const projects = [
     metric: '98/100',
     metricLabel: 'Lighthouse',
   },
+  {
+    id: 9,
+    slug: 'shree-dental-clinic',
+    title: 'Shree Dental Clinic',
+    category: 'Healthcare',
+    type: 'Clinic Website',
+    desc: 'A patient-focused clinic website with online appointment booking, treatment pages, doctor profiles, and a 99/100 Lighthouse score — built for a modern dental practice in Tamil Nadu.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    img: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&h=640&fit=crop&auto=format',
+    color: '#0EA5E9',
+    year: '2026',
+    num: '09',
+    metric: '99/100',
+    metricLabel: 'Lighthouse',
+  },
+  {
+    id: 10,
+    slug: 'joy-bright-sun-solar',
+    title: 'Joy Bright Sun Solar',
+    category: 'Renewable Energy',
+    type: 'Corporate Website',
+    desc: 'A premium corporate website for a solar energy company in Cuddalore — solar product pages, project portfolio, savings calculator, and 98/100 Lighthouse performance.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    img: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900&h=640&fit=crop&auto=format',
+    color: '#F59E0B',
+    year: '2026',
+    num: '10',
+    metric: '98/100',
+    metricLabel: 'Lighthouse',
+  },
 ]
 
-const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage', 'Textile & Fashion', 'Food Export', 'Construction']
+const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage', 'Textile & Fashion', 'Food Export', 'Construction', 'Healthcare', 'Renewable Energy']
 
 // ─── All Projects Modal ────────────────────────────────────────────────────────
 function AllProjectsModal({

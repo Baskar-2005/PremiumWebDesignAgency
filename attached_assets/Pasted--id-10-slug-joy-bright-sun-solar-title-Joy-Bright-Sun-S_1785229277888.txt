@@ -1,0 +1,287 @@
+{
+  id: 10,
+  slug: 'joy-bright-sun-solar',
+  title: 'Joy Bright Sun Solar',
+  tagline: 'Powering a sustainable future through smart solar energy solutions',
+  category: 'Renewable Energy',
+  type: 'Corporate Website',
+  client: 'Joy Bright Sun Solar',
+  industry: 'Solar Energy',
+  location: 'Cuddalore, Tamil Nadu',
+  website: 'https://joybrightsunsolar.com',
+  duration: '50 Days',
+  teamSize: '3 Members',
+  completionDate: 'November 2026',
+  status: 'Completed',
+  budgetRange: '₹1,10,000',
+
+  budgetBreakdown: [
+    { label: 'UI / UX Design', amount: '₹25,000' },
+    { label: 'Frontend Development', amount: '₹40,000' },
+    { label: 'Backend Development', amount: '₹25,000' },
+    { label: 'Deployment & SEO', amount: '₹20,000' },
+  ],
+
+  supportPeriod: '12 Months',
+
+  color: '#F59E0B',
+  year: '2026',
+  num: '10',
+
+  heroImg:
+    'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1400&h=800&fit=crop&auto=format',
+
+  galleryImgs: [
+    {
+      url: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900&h=600&fit=crop&auto=format',
+      label: 'Homepage'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=900&h=600&fit=crop&auto=format',
+      label: 'Solar Solutions'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=900&h=600&fit=crop&auto=format',
+      label: 'Projects'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=900&h=600&fit=crop&auto=format',
+      label: 'Contact'
+    }
+  ],
+
+  badges: [
+    'Responsive',
+    'SEO Optimized',
+    'Renewable Energy',
+    'Fast Performance',
+    'Premium UI'
+  ],
+
+  overview: {
+    heading:
+      'Helping a solar energy company establish a powerful digital presence.',
+    goals:
+      'Build a premium corporate website that showcases solar solutions, completed installations, customer benefits, and generates qualified enquiries.',
+    problem:
+      'The company required a professional online platform to educate customers about solar energy while highlighting completed projects and increasing lead generation.',
+    audience:
+      'Homeowners, commercial businesses, industries, educational institutions, factories, and agricultural customers looking for solar solutions.',
+    solution:
+      'Designed and developed a modern website featuring solar products, installation services, project portfolio, ROI calculator, enquiry forms, and strong SEO.'
+  },
+
+  challenges: [
+    {
+      title: 'Educating Customers',
+      desc: 'Explaining solar technology in a simple and engaging way.',
+      icon: '☀️'
+    },
+    {
+      title: 'Lead Generation',
+      desc: 'Encouraging visitors to request quotations and consultations.',
+      icon: '📈'
+    },
+    {
+      title: 'Project Showcase',
+      desc: 'Displaying completed residential and commercial installations.',
+      icon: '🏡'
+    },
+    {
+      title: 'Performance',
+      desc: 'Delivering a fast experience despite image-heavy content.',
+      icon: '⚡'
+    }
+  ],
+
+  solutions: [
+    {
+      title: 'Modern Corporate Design',
+      desc: 'Clean layouts with energy-inspired visuals and animations.',
+      icon: '✨'
+    },
+    {
+      title: 'Solar Product Pages',
+      desc: 'Dedicated pages for rooftop, commercial, and industrial systems.',
+      icon: '🔋'
+    },
+    {
+      title: 'Quotation Request',
+      desc: 'Simple enquiry forms for residential and commercial customers.',
+      icon: '📨'
+    },
+    {
+      title: 'SEO Strategy',
+      desc: 'Optimized for local solar installation searches.',
+      icon: '🚀'
+    }
+  ],
+
+  features: [
+    {
+      title: 'Solar Solutions',
+      desc: 'Residential, commercial and industrial solar systems.',
+      icon: '☀️'
+    },
+    {
+      title: 'Project Portfolio',
+      desc: 'Completed installation showcase.',
+      icon: '🏡'
+    },
+    {
+      title: 'Savings Calculator',
+      desc: 'Estimate electricity bill savings with solar.',
+      icon: '💰'
+    },
+    {
+      title: 'Instant Quote Form',
+      desc: 'Generate qualified customer enquiries.',
+      icon: '📨'
+    },
+    {
+      title: 'Responsive Design',
+      desc: 'Optimized across all devices.',
+      icon: '📱'
+    },
+    {
+      title: 'SEO Optimized',
+      desc: 'Better visibility in Google search.',
+      icon: '📈'
+    },
+    {
+      title: 'Performance Optimized',
+      desc: 'Fast loading pages and optimized assets.',
+      icon: '⚡'
+    },
+    {
+      title: 'WhatsApp Integration',
+      desc: 'Quick customer communication.',
+      icon: '💬'
+    }
+  ],
+
+  techStack: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Firebase',
+    'Framer Motion',
+    'Netlify'
+  ],
+
+  timeline: [
+    {
+      phase: 'Discovery',
+      duration: '5 Days',
+      desc: 'Understanding solar products and customer requirements.'
+    },
+    {
+      phase: 'UI / UX Design',
+      duration: '10 Days',
+      desc: 'Premium layouts with modern branding.'
+    },
+    {
+      phase: 'Development',
+      duration: '24 Days',
+      desc: 'Responsive frontend and enquiry system.'
+    },
+    {
+      phase: 'Testing',
+      duration: '6 Days',
+      desc: 'Performance and cross-browser testing.'
+    },
+    {
+      phase: 'Deployment',
+      duration: '5 Days',
+      desc: 'Production launch and SEO setup.'
+    }
+  ],
+
+  performance: [
+    { label: 'Performance', score: 98, color: '#22C55E' },
+    { label: 'Accessibility', score: 97, color: '#22C55E' },
+    { label: 'Best Practices', score: 100, color: '#22C55E' },
+    { label: 'SEO', score: 100, color: '#22C55E' }
+  ],
+
+  results: [
+    {
+      value: '98',
+      suffix: '/100',
+      label: 'Lighthouse Score'
+    },
+    {
+      value: '100',
+      suffix: '%',
+      label: 'Mobile Responsive'
+    },
+    {
+      value: '2.1',
+      suffix: 's',
+      label: 'Average Load Time'
+    },
+    {
+      value: '65',
+      suffix: '%',
+      label: 'Increase in Enquiries',
+      prefix: '+'
+    },
+    {
+      value: '54',
+      suffix: '%',
+      label: 'Higher User Engagement',
+      prefix: '+'
+    },
+    {
+      value: '24',
+      suffix: '/7',
+      label: 'Website Availability'
+    }
+  ],
+
+  testimonial: {
+    quote:
+      'Digital Shine developed a modern website that clearly showcases our solar solutions and has made it much easier for customers to contact us for quotations.',
+    name: 'Managing Director',
+    role: 'Founder',
+    company: 'Joy Bright Sun Solar',
+    avatar:
+      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&auto=format',
+    rating: 5
+  },
+
+  deliverables: [
+    'Corporate Website',
+    'Responsive Design',
+    'Solar Product Pages',
+    'Project Portfolio',
+    'Quotation System',
+    'SEO Optimization',
+    'Performance Optimization',
+    'Hosting & Deployment',
+    'Analytics Setup',
+    '12 Months Support'
+  ],
+
+  tags: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Framer Motion'
+  ],
+
+  relatedIds: [9, 8, 7],
+
+  liveUrl: 'https://joybrightsunsolar.com',
+
+  services: [
+    'UI/UX Design',
+    'Frontend Development',
+    'SEO',
+    'Performance Optimization',
+    'Deployment'
+  ],
+
+  videoPlaceholder:
+    'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=675&fit=crop&auto=format'
+}

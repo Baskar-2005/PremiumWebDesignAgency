@@ -1,0 +1,287 @@
+{
+  id: 9,
+  slug: 'shree-dental-clinic',
+  title: 'Shree Dental Clinic',
+  tagline: 'Modern dental care with a premium digital patient experience',
+  category: 'Healthcare',
+  type: 'Clinic Website',
+  client: 'Shree Dental Clinic',
+  industry: 'Healthcare',
+  location: 'Tamil Nadu',
+  website: 'https://shreedentalclinic.com',
+  duration: '45 Days',
+  teamSize: '3 Members',
+  completionDate: 'October 2026',
+  status: 'Completed',
+  budgetRange: '₹95,000',
+
+  budgetBreakdown: [
+    { label: 'UI / UX Design', amount: '₹20,000' },
+    { label: 'Frontend Development', amount: '₹35,000' },
+    { label: 'Backend Development', amount: '₹25,000' },
+    { label: 'Deployment & SEO', amount: '₹15,000' },
+  ],
+
+  supportPeriod: '12 Months',
+
+  color: '#0EA5E9',
+  year: '2026',
+  num: '09',
+
+  heroImg:
+    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1400&h=800&fit=crop&auto=format',
+
+  galleryImgs: [
+    {
+      url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&h=600&fit=crop&auto=format',
+      label: 'Homepage'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=900&h=600&fit=crop&auto=format',
+      label: 'Treatments'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&h=600&fit=crop&auto=format',
+      label: 'Doctors'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&h=600&fit=crop&auto=format',
+      label: 'Appointment'
+    }
+  ],
+
+  badges: [
+    'Responsive',
+    'Appointment Booking',
+    'SEO Optimized',
+    'Fast Performance',
+    'Modern UI'
+  ],
+
+  overview: {
+    heading:
+      'Designing a premium digital experience for a modern dental clinic.',
+    goals:
+      'Create a professional website that builds patient trust, showcases treatments, highlights doctors, and simplifies appointment booking.',
+    problem:
+      'The clinic lacked an engaging online presence, making it difficult for patients to learn about treatments and schedule appointments.',
+    audience:
+      'Families, children, adults, cosmetic dentistry patients, orthodontic patients, and emergency dental care seekers.',
+    solution:
+      'Developed a clean, patient-focused website featuring treatment pages, online appointment booking, doctor profiles, testimonials, and strong SEO.'
+  },
+
+  challenges: [
+    {
+      title: 'Building Patient Trust',
+      desc: 'Creating a welcoming experience that reflects professionalism and care.',
+      icon: '🦷'
+    },
+    {
+      title: 'Treatment Information',
+      desc: 'Presenting dental procedures in an easy-to-understand way.',
+      icon: '📖'
+    },
+    {
+      title: 'Appointment Booking',
+      desc: 'Making consultations easy to schedule from any device.',
+      icon: '📅'
+    },
+    {
+      title: 'Performance',
+      desc: 'Delivering fast-loading pages with optimized medical imagery.',
+      icon: '⚡'
+    }
+  ],
+
+  solutions: [
+    {
+      title: 'Premium Healthcare UI',
+      desc: 'Modern layouts using calming colors and intuitive navigation.',
+      icon: '✨'
+    },
+    {
+      title: 'Treatment Showcase',
+      desc: 'Dedicated pages explaining each dental service.',
+      icon: '🦷'
+    },
+    {
+      title: 'Online Booking',
+      desc: 'Simple appointment request system with instant enquiry.',
+      icon: '📨'
+    },
+    {
+      title: 'SEO Optimization',
+      desc: 'Optimized for local dental searches.',
+      icon: '🚀'
+    }
+  ],
+
+  features: [
+    {
+      title: 'Online Appointment Booking',
+      desc: 'Book consultations in just a few clicks.',
+      icon: '📅'
+    },
+    {
+      title: 'Treatment Pages',
+      desc: 'Detailed information on dental treatments and procedures.',
+      icon: '🦷'
+    },
+    {
+      title: 'Doctor Profiles',
+      desc: 'Professional profiles with qualifications and expertise.',
+      icon: '👨‍⚕️'
+    },
+    {
+      title: 'Patient Testimonials',
+      desc: 'Build confidence through verified patient feedback.',
+      icon: '⭐'
+    },
+    {
+      title: 'Responsive Design',
+      desc: 'Optimized across desktop, tablet, and mobile devices.',
+      icon: '📱'
+    },
+    {
+      title: 'SEO Optimized',
+      desc: 'Improved visibility for local dental searches.',
+      icon: '📈'
+    },
+    {
+      title: 'Performance Optimized',
+      desc: 'Fast loading with optimized assets.',
+      icon: '⚡'
+    },
+    {
+      title: 'Google Maps & Contact',
+      desc: 'Easy navigation and one-click contact options.',
+      icon: '📍'
+    }
+  ],
+
+  techStack: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Firebase',
+    'Framer Motion',
+    'Netlify'
+  ],
+
+  timeline: [
+    {
+      phase: 'Research',
+      duration: '5 Days',
+      desc: 'Understanding patient needs and clinic workflow.'
+    },
+    {
+      phase: 'UI / UX Design',
+      duration: '8 Days',
+      desc: 'Designing premium healthcare interfaces.'
+    },
+    {
+      phase: 'Development',
+      duration: '22 Days',
+      desc: 'Building responsive pages and booking functionality.'
+    },
+    {
+      phase: 'Testing',
+      duration: '5 Days',
+      desc: 'Cross-browser, responsiveness, and performance testing.'
+    },
+    {
+      phase: 'Deployment',
+      duration: '5 Days',
+      desc: 'Production launch and SEO optimization.'
+    }
+  ],
+
+  performance: [
+    { label: 'Performance', score: 99, color: '#22C55E' },
+    { label: 'Accessibility', score: 98, color: '#22C55E' },
+    { label: 'Best Practices', score: 100, color: '#22C55E' },
+    { label: 'SEO', score: 100, color: '#22C55E' }
+  ],
+
+  results: [
+    {
+      value: '99',
+      suffix: '/100',
+      label: 'Lighthouse Score'
+    },
+    {
+      value: '2.0',
+      suffix: 's',
+      label: 'Average Load Time'
+    },
+    {
+      value: '100',
+      suffix: '%',
+      label: 'Responsive Design'
+    },
+    {
+      value: '52',
+      suffix: '%',
+      label: 'Increase in Appointment Requests',
+      prefix: '+'
+    },
+    {
+      value: '58',
+      suffix: '%',
+      label: 'Higher Patient Engagement',
+      prefix: '+'
+    },
+    {
+      value: '24',
+      suffix: '/7',
+      label: 'Website Availability'
+    }
+  ],
+
+  testimonial: {
+    quote:
+      'Digital Shine created a modern website that perfectly represents our clinic. Patients now find it easier to understand our treatments and book appointments online.',
+    name: 'Dr. Shree',
+    role: 'Chief Dentist',
+    company: 'Shree Dental Clinic',
+    avatar:
+      'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&auto=format',
+    rating: 5
+  },
+
+  deliverables: [
+    'Clinic Website',
+    'Responsive Design',
+    'Appointment Booking',
+    'Treatment Pages',
+    'Doctor Profiles',
+    'SEO Optimization',
+    'Performance Optimization',
+    'Hosting & Deployment',
+    'Analytics Integration',
+    '12 Months Support'
+  ],
+
+  tags: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Framer Motion'
+  ],
+
+  relatedIds: [8, 7, 6],
+
+  liveUrl: 'https://shreedentalclinic.com',
+
+  services: [
+    'UI/UX Design',
+    'Frontend Development',
+    'SEO',
+    'Performance Optimization',
+    'Deployment'
+  ],
+
+  videoPlaceholder:
+    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&h=675&fit=crop&auto=format'
+}
