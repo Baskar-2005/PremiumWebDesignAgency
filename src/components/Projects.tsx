@@ -1088,9 +1088,9 @@ export default function Projects({
             </motion.div>
           </div>
 
-          {/* Project cards */}
+          {/* Project cards — show 4 most recent */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-            {projects.map((p, i) => (
+            {projects.slice(-4).map((p, i) => (
               <ProjectCard key={p.id} p={p} i={i} onViewProject={onViewProject} />
             ))}
           </div>
