@@ -62,9 +62,24 @@ const projects = [
     metric: '300ms',
     metricLabel: 'Latency',
   },
+  {
+    id: 5,
+    slug: 'konjoondu-oorgai',
+    title: 'Konjoondu Oorgai',
+    category: 'Food & Beverage',
+    type: 'E-Commerce Website',
+    desc: 'A premium digital storefront for authentic South Indian non-veg pickles — with categorized products, WhatsApp ordering, Firebase admin, and a 98/100 Lighthouse score.',
+    tags: ['React', 'Firebase', 'Tailwind', 'Framer Motion'],
+    img: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&h=640&fit=crop&auto=format',
+    color: '#C0392B',
+    year: '2026',
+    num: '05',
+    metric: '98/100',
+    metricLabel: 'Lighthouse',
+  },
 ]
 
-const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS']
+const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage']
 
 // ─── All Projects Modal ────────────────────────────────────────────────────────
 function AllProjectsModal({
