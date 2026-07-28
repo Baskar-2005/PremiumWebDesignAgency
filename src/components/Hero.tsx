@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import ShineText from './smoothui/shine-text'
 
 function BrowserMockup() {
 
@@ -423,7 +424,14 @@ export default function Hero() {
               <br />
               Experiences
               <br />
-              <span style={{ color: 'rgba(255,255,255,0.35)' }}>People Remember.</span>
+              <ShineText
+                baseColor="rgba(255,255,255,0.3)"
+                shineColor="rgba(255,255,255,0.95)"
+                duration={2.8}
+                repeatDelay={1.2}
+              >
+                People Remember.
+              </ShineText>
             </motion.h1>
 
             <motion.p
