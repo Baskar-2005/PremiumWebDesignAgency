@@ -283,9 +283,21 @@ body {
 }
 .testimonial-track:hover { animation-play-state: paused; }
 
+.testimonial-track-reverse {
+  display: flex;
+  gap: 24px;
+  animation: scrollRight 44s linear infinite;
+}
+.testimonial-track-reverse:hover { animation-play-state: paused; }
+
 @keyframes scrollLeft {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 
 /* Section title label */

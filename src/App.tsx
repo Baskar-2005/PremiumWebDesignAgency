@@ -16,7 +16,12 @@ import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CaseStudy from './components/CaseStudy'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import Careers from './pages/Careers'
 import { getProjectBySlug } from './data/projectsData'
+
+type Page = 'privacy' | 'terms' | 'careers'
 
 function CursorFollower() {
   const dotRef = useRef<HTMLDivElement>(null)
@@ -72,6 +77,17 @@ export default function App() {
   const [activeSlug, setActiveSlug] = useState<string | null>(null)
   const [caseStudySource, setCaseStudySource] = useState<'modal' | 'section'>('section')
   const [modalTrigger, setModalTrigger] = useState(0)
+  const [activePage, setActivePage] = useState<Page | null>(null)
+
+  const navigateTo = (page: Page) => {
+    setActivePage(page)
+    setActiveSlug(null)
+    window.scrollTo(0, 0)
+  }
+  const goHome = () => {
+    setActivePage(null)
+    window.scrollTo(0, 0)
+  }
 
   useEffect(() => {
     setIsMobile(window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768)
@@ -86,7 +102,14 @@ export default function App() {
       <ScrollProgress />
 
       <AnimatePresence mode="wait">
-        {activeProject ? (
+        {/* ── Page overlays ── */}
+        {activePage === 'privacy' ? (
+          <PrivacyPolicy key="privacy" onBack={goHome} />
+        ) : activePage === 'terms' ? (
+          <TermsOfService key="terms" onBack={goHome} />
+        ) : activePage === 'careers' ? (
+          <Careers key="careers" onBack={goHome} />
+        ) : activeProject ? (
           <CaseStudy
             key={activeSlug}
             project={activeProject}
@@ -98,7 +121,6 @@ export default function App() {
               const wasModal = caseStudySource === 'modal'
               setActiveSlug(null)
               if (wasModal) {
-                // Reopen the AllProjectsModal the user came from
                 setTimeout(() => setModalTrigger(t => t + 1), 350)
               } else {
                 setTimeout(() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }), 100)
@@ -144,7 +166,7 @@ export default function App() {
               <Contact />
             </main>
 
-            <Footer />
+            <Footer onNavigate={navigateTo} />
 
             <div className="md:hidden" style={{ position: 'fixed', bottom: 20, left: 20, right: 20, zIndex: 500 }}>
               <button
