@@ -77,9 +77,24 @@ const projects = [
     metric: '98/100',
     metricLabel: 'Lighthouse',
   },
+  {
+    id: 6,
+    slug: 'kasthuribai-textiles',
+    title: 'Kasthuribai Company',
+    category: 'Textile & Fashion',
+    type: 'Corporate Website',
+    desc: 'A premium digital experience for a heritage textile brand since 1943 — showcasing sarees, silk collections, and wedding wear with luxury design and 97/100 Lighthouse performance.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    img: 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=900&h=640&fit=crop&auto=format',
+    color: '#8B1E3F',
+    year: '2026',
+    num: '06',
+    metric: '97/100',
+    metricLabel: 'Lighthouse',
+  },
 ]
 
-const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage']
+const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage', 'Textile & Fashion']
 
 // ─── All Projects Modal ────────────────────────────────────────────────────────
 function AllProjectsModal({
