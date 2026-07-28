@@ -1,0 +1,280 @@
+{
+  id: 8,
+  slug: 'signature-plus-construction',
+  title: 'Signature Plus Construction',
+  tagline: 'Building modern spaces with precision, quality, and innovation',
+  category: 'Construction',
+  type: 'Corporate Website',
+  client: 'Signature Plus Construction',
+  industry: 'Construction & Infrastructure',
+  location: 'Chennai, Tamil Nadu',
+  website: 'https://signatureplus.in',
+  duration: '65 Days',
+  teamSize: '4 Members',
+  completionDate: 'September 2026',
+  status: 'Completed',
+  budgetRange: '₹1,50,000',
+
+  budgetBreakdown: [
+    { label: 'UI / UX Design', amount: '₹35,000' },
+    { label: 'Frontend Development', amount: '₹55,000' },
+    { label: 'Backend Development', amount: '₹35,000' },
+    { label: 'Deployment & SEO', amount: '₹25,000' },
+  ],
+
+  supportPeriod: '12 Months',
+
+  color: '#D97706',
+  year: '2026',
+  num: '08',
+
+  heroImg:
+    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&h=800&fit=crop&auto=format',
+
+  galleryImgs: [
+    {
+      url: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&h=600&fit=crop&auto=format',
+      label: 'Homepage'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?w=900&h=600&fit=crop&auto=format',
+      label: 'Projects'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&h=600&fit=crop&auto=format',
+      label: 'Services'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&h=600&fit=crop&auto=format',
+      label: 'Contact'
+    }
+  ],
+
+  badges: [
+    'Responsive',
+    'Premium UI',
+    'SEO Optimized',
+    'Fast Performance',
+    'Modern Design'
+  ],
+
+  overview: {
+    heading: 'Creating a premium digital identity for a modern construction company.',
+    goals: 'Develop a high-end corporate website that showcases completed projects, construction services, engineering expertise, and generates qualified client enquiries.',
+    problem: 'The company needed a professional online presence to establish credibility, highlight completed projects, and attract residential and commercial construction clients.',
+    audience: 'Homeowners, commercial clients, architects, property developers, and infrastructure investors.',
+    solution: 'Designed a visually stunning corporate website featuring project showcases, service pages, company profile, enquiry system, smooth animations, and SEO-focused architecture.'
+  },
+
+  challenges: [
+    {
+      title: 'Building Trust',
+      desc: 'Construction companies depend heavily on credibility and completed projects.',
+      icon: '🏗️'
+    },
+    {
+      title: 'Project Showcase',
+      desc: 'Presenting large construction projects in an engaging way.',
+      icon: '🏢'
+    },
+    {
+      title: 'Lead Generation',
+      desc: 'Converting website visitors into genuine project enquiries.',
+      icon: '📈'
+    },
+    {
+      title: 'Performance',
+      desc: 'Optimizing high-resolution construction imagery.',
+      icon: '⚡'
+    }
+  ],
+
+  solutions: [
+    {
+      title: 'Premium Corporate Design',
+      desc: 'Luxury-inspired layouts with bold typography and elegant spacing.',
+      icon: '✨'
+    },
+    {
+      title: 'Interactive Project Portfolio',
+      desc: 'Dedicated pages highlighting residential and commercial projects.',
+      icon: '🏘️'
+    },
+    {
+      title: 'Quick Enquiry Forms',
+      desc: 'Simple quotation and consultation request system.',
+      icon: '📨'
+    },
+    {
+      title: 'SEO Strategy',
+      desc: 'Optimized architecture for better Google visibility.',
+      icon: '🚀'
+    }
+  ],
+
+  features: [
+    {
+      title: 'Project Portfolio',
+      desc: 'Showcase of completed residential and commercial projects.',
+      icon: '🏗️'
+    },
+    {
+      title: 'Construction Services',
+      desc: 'Detailed service pages for construction and renovation.',
+      icon: '🧱'
+    },
+    {
+      title: 'About Company',
+      desc: 'Professional company profile and expertise.',
+      icon: '🏢'
+    },
+    {
+      title: 'Client Testimonials',
+      desc: 'Build trust through customer reviews.',
+      icon: '⭐'
+    },
+    {
+      title: 'Responsive Design',
+      desc: 'Perfect experience across all devices.',
+      icon: '📱'
+    },
+    {
+      title: 'SEO Optimized',
+      desc: 'Higher visibility in search engines.',
+      icon: '📈'
+    },
+    {
+      title: 'Fast Performance',
+      desc: 'Optimized loading with image compression.',
+      icon: '⚡'
+    },
+    {
+      title: 'Contact & Quote Form',
+      desc: 'Generate qualified construction leads.',
+      icon: '☎️'
+    }
+  ],
+
+  techStack: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Firebase',
+    'Framer Motion',
+    'Netlify'
+  ],
+
+  timeline: [
+    {
+      phase: 'Discovery',
+      duration: '6 Days',
+      desc: 'Requirement gathering and competitor analysis.'
+    },
+    {
+      phase: 'UI / UX Design',
+      duration: '12 Days',
+      desc: 'Premium interface design and wireframes.'
+    },
+    {
+      phase: 'Development',
+      duration: '30 Days',
+      desc: 'Frontend development with responsive implementation.'
+    },
+    {
+      phase: 'Testing',
+      duration: '10 Days',
+      desc: 'Cross-browser, responsive and SEO testing.'
+    },
+    {
+      phase: 'Deployment',
+      duration: '7 Days',
+      desc: 'Launch and optimization.'
+    }
+  ],
+
+  performance: [
+    { label: 'Performance', score: 98, color: '#22C55E' },
+    { label: 'Accessibility', score: 96, color: '#22C55E' },
+    { label: 'Best Practices', score: 100, color: '#22C55E' },
+    { label: 'SEO', score: 100, color: '#22C55E' }
+  ],
+
+  results: [
+    {
+      value: '98',
+      suffix: '/100',
+      label: 'Lighthouse Score'
+    },
+    {
+      value: '2.0',
+      suffix: 's',
+      label: 'Average Load Time'
+    },
+    {
+      value: '100',
+      suffix: '%',
+      label: 'Responsive Design'
+    },
+    {
+      value: '55',
+      suffix: '%',
+      label: 'Increase in Enquiries',
+      prefix: '+'
+    },
+    {
+      value: '48',
+      suffix: '%',
+      label: 'Higher User Engagement',
+      prefix: '+'
+    },
+    {
+      value: '24',
+      suffix: '/7',
+      label: 'Website Availability'
+    }
+  ],
+
+  testimonial: {
+    quote: "Digital Shine delivered a premium corporate website that truly represents our construction business. The project showcase, modern design, and smooth experience have significantly strengthened our online presence.",
+    name: 'Managing Director',
+    role: 'Director',
+    company: 'Signature Plus Construction',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&auto=format',
+    rating: 5
+  },
+
+  deliverables: [
+    'Corporate Website',
+    'Responsive Design',
+    'Project Showcase',
+    'Service Pages',
+    'SEO Optimization',
+    'Performance Optimization',
+    'Contact Forms',
+    'Hosting & Deployment',
+    'Analytics Setup',
+    '12 Months Support'
+  ],
+
+  tags: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Framer Motion'
+  ],
+
+  relatedIds: [7, 6, 5],
+
+  liveUrl: 'https://signatureplus.in',
+
+  services: [
+    'UI/UX Design',
+    'Frontend Development',
+    'SEO',
+    'Performance Optimization',
+    'Deployment'
+  ],
+
+  videoPlaceholder:
+    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=675&fit=crop&auto=format'
+}

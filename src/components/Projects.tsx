@@ -92,9 +92,39 @@ const projects = [
     metric: '97/100',
     metricLabel: 'Lighthouse',
   },
+  {
+    id: 7,
+    slug: 'vm-foods',
+    title: 'VM Food Products',
+    category: 'Food Export',
+    type: 'Corporate Website',
+    desc: 'A premium corporate website for a global cashew exporter — showcasing product grades, manufacturing capabilities, and export enquiry flows with a 98/100 Lighthouse score.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=900&h=640&fit=crop&auto=format',
+    color: '#8C5A2B',
+    year: '2026',
+    num: '07',
+    metric: '98/100',
+    metricLabel: 'Lighthouse',
+  },
+  {
+    id: 8,
+    slug: 'signature-plus-construction',
+    title: 'Signature Plus Construction',
+    category: 'Construction',
+    type: 'Corporate Website',
+    desc: 'A high-end corporate website for a Chennai construction company — project portfolio, service pages, lead generation forms, and 98/100 Lighthouse performance.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&h=640&fit=crop&auto=format',
+    color: '#D97706',
+    year: '2026',
+    num: '08',
+    metric: '98/100',
+    metricLabel: 'Lighthouse',
+  },
 ]
 
-const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage', 'Textile & Fashion']
+const FILTERS = ['All', 'Fintech', 'Creative', 'E-Commerce', 'SaaS', 'Food & Beverage', 'Textile & Fashion', 'Food Export', 'Construction']
 
 // ─── All Projects Modal ────────────────────────────────────────────────────────
 function AllProjectsModal({

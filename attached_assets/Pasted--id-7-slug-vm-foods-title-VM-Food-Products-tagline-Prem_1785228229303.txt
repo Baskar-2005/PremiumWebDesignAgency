@@ -1,0 +1,278 @@
+{
+  id: 7,
+  slug: 'vm-foods',
+  title: 'VM Food Products',
+  tagline: 'Premium Cashew Export & Processing Company Digital Experience',
+  category: 'Food Export',
+  type: 'Corporate Website',
+  client: 'VM Food Products Pvt. Ltd.',
+  industry: 'Cashew Processing & Export',
+  location: 'Panruti, Tamil Nadu',
+  website: 'https://vm-group.in/vm-food-products.php',
+  duration: '60 Days',
+  teamSize: '3 Members',
+  completionDate: 'August 2026',
+  status: 'Completed',
+  budgetRange: '₹1,40,000',
+
+  budgetBreakdown: [
+    { label: 'UI / UX Design', amount: '₹30,000' },
+    { label: 'Frontend Development', amount: '₹50,000' },
+    { label: 'Backend Development', amount: '₹35,000' },
+    { label: 'Deployment & SEO', amount: '₹25,000' },
+  ],
+
+  supportPeriod: '12 Months',
+
+  color: '#8C5A2B',
+  year: '2026',
+  num: '07',
+
+  heroImg: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1400&h=800&fit=crop&auto=format',
+
+  galleryImgs: [
+    {
+      url: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=900&h=600&fit=crop&auto=format',
+      label: 'Homepage'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1603048719539-9ecb7d4df5a5?w=900&h=600&fit=crop&auto=format',
+      label: 'Products'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e3?w=900&h=600&fit=crop&auto=format',
+      label: 'Export'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=900&h=600&fit=crop&auto=format',
+      label: 'Factory'
+    }
+  ],
+
+  badges: [
+    'Responsive',
+    'SEO Optimized',
+    'Export Ready',
+    'Premium UI',
+    'Fast Performance'
+  ],
+
+  overview: {
+    heading: 'Building a premium digital identity for a global cashew exporter.',
+    goals: 'Create a modern corporate website that showcases manufacturing capabilities, export expertise, certifications, and premium cashew products while generating international enquiries.',
+    problem: 'The company required a professional online presence that reflects its manufacturing strength, export capabilities, and product quality for global buyers.',
+    audience: 'International importers, wholesalers, food manufacturers, supermarkets, distributors, and B2B buyers.',
+    solution: 'Developed a premium corporate website with modern animations, product showcase, manufacturing highlights, export enquiry forms, SEO optimization, and responsive layouts.'
+  },
+
+  challenges: [
+    {
+      title: 'Global Brand Positioning',
+      desc: 'Creating a website that appeals to international buyers.',
+      icon: '🌍'
+    },
+    {
+      title: 'Product Presentation',
+      desc: 'Showcasing different cashew grades professionally.',
+      icon: '🥜'
+    },
+    {
+      title: 'Factory Showcase',
+      desc: 'Highlighting manufacturing capabilities and infrastructure.',
+      icon: '🏭'
+    },
+    {
+      title: 'Lead Generation',
+      desc: 'Increasing export enquiries through optimized conversion flows.',
+      icon: '📈'
+    }
+  ],
+
+  solutions: [
+    {
+      title: 'Premium Corporate UI',
+      desc: 'Designed a clean, international-standard corporate experience.',
+      icon: '✨'
+    },
+    {
+      title: 'Interactive Product Pages',
+      desc: 'Detailed cashew grade presentation with export specifications.',
+      icon: '📦'
+    },
+    {
+      title: 'Export Enquiry System',
+      desc: 'Easy quotation requests for international buyers.',
+      icon: '📨'
+    },
+    {
+      title: 'SEO Optimization',
+      desc: 'Optimized for export-related search visibility.',
+      icon: '🚀'
+    }
+  ],
+
+  features: [
+    {
+      title: 'Company Profile',
+      desc: 'Professional presentation of company history and vision.',
+      icon: '🏢'
+    },
+    {
+      title: 'Cashew Product Showcase',
+      desc: 'Premium display of export-quality cashew grades.',
+      icon: '🥜'
+    },
+    {
+      title: 'Manufacturing Facility',
+      desc: 'Interactive factory and production capability pages.',
+      icon: '🏭'
+    },
+    {
+      title: 'Export Enquiry',
+      desc: 'Quick quotation and international enquiry system.',
+      icon: '📨'
+    },
+    {
+      title: 'Responsive Design',
+      desc: 'Optimized across desktop, tablet and mobile.',
+      icon: '📱'
+    },
+    {
+      title: 'SEO Optimized',
+      desc: 'Improved visibility for export-related searches.',
+      icon: '📈'
+    },
+    {
+      title: 'Performance Optimized',
+      desc: 'Fast-loading pages with optimized assets.',
+      icon: '⚡'
+    },
+    {
+      title: 'Contact Integration',
+      desc: 'Integrated business contact and enquiry forms.',
+      icon: '☎️'
+    }
+  ],
+
+  techStack: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Firebase',
+    'Framer Motion',
+    'Netlify'
+  ],
+
+  timeline: [
+    {
+      phase: 'Requirement Analysis',
+      duration: '6 Days',
+      desc: 'Understanding export business and branding.'
+    },
+    {
+      phase: 'UI/UX Design',
+      duration: '10 Days',
+      desc: 'Designing premium layouts and user journeys.'
+    },
+    {
+      phase: 'Development',
+      duration: '28 Days',
+      desc: 'Building responsive pages with optimized performance.'
+    },
+    {
+      phase: 'Testing',
+      duration: '8 Days',
+      desc: 'Cross-browser, responsive, and SEO testing.'
+    },
+    {
+      phase: 'Deployment',
+      duration: '8 Days',
+      desc: 'Production launch and final optimization.'
+    }
+  ],
+
+  performance: [
+    { label: 'Performance', score: 98, color: '#22C55E' },
+    { label: 'Accessibility', score: 95, color: '#22C55E' },
+    { label: 'Best Practices', score: 100, color: '#22C55E' },
+    { label: 'SEO', score: 99, color: '#22C55E' }
+  ],
+
+  results: [
+    {
+      value: '98',
+      suffix: '/100',
+      label: 'Lighthouse Score'
+    },
+    {
+      value: '100',
+      suffix: '%',
+      label: 'Mobile Responsive'
+    },
+    {
+      value: '2.0',
+      suffix: 's',
+      label: 'Average Load Time'
+    },
+    {
+      value: '50',
+      suffix: '%',
+      label: 'More Website Enquiries',
+      prefix: '+'
+    },
+    {
+      value: '60',
+      suffix: '%',
+      label: 'Higher User Engagement',
+      prefix: '+'
+    },
+    {
+      value: '24',
+      suffix: '/7',
+      label: 'Website Availability'
+    }
+  ],
+
+  testimonial: {
+    quote: "Digital Shine delivered a premium website that perfectly represents our export business. The modern design and smooth experience have strengthened our online presence and made it easier for buyers to connect with us.",
+    name: 'VM Food Products Team',
+    role: 'Management',
+    company: 'VM Food Products Pvt. Ltd.',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&auto=format',
+    rating: 5
+  },
+
+  deliverables: [
+    'Corporate Website',
+    'Responsive Design',
+    'Product Showcase',
+    'Export Enquiry System',
+    'SEO Optimization',
+    'Performance Optimization',
+    'Hosting & Deployment',
+    'Analytics Integration',
+    'Training',
+    '12 Months Support'
+  ],
+
+  tags: [
+    'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Framer Motion'
+  ],
+
+  relatedIds: [5, 6, 1],
+
+  liveUrl: 'https://vm-group.in/vm-food-products.php',
+
+  services: [
+    'UI/UX Design',
+    'Frontend Development',
+    'SEO',
+    'Performance Optimization',
+    'Deployment'
+  ],
+
+  videoPlaceholder: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=675&fit=crop&auto=format'
+}
